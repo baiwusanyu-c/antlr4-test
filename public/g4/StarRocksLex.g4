@@ -15,10 +15,13 @@
 
 lexer grammar StarRocksLex;
 @members {
-private long sqlMode = com.starrocks.qe.SqlModeHelper.MODE_DEFAULT;
-public void setSqlMode(long newSqlMode) {
-    sqlMode = newSqlMode;
-}
+    this.MODE_DEFAULT = 32;
+  this.MODE_PIPES_AS_CONCAT = 1 << 1;
+  this.sqlMode = this.MODE_DEFAULT;
+
+  this.setSqlMode = function(newSqlMode) {
+    this.sqlMode = newSqlMode;
+  };
 }
 tokens {
     CONCAT

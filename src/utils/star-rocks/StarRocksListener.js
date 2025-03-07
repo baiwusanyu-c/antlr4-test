@@ -1,4 +1,4 @@
-// Generated from C:/Users/chenzhihui/Desktop/StarRocks.g4 by ANTLR 4.13.2
+// Generated from D:/project-github/antlr4-test/public/g4/StarRocks.g4 by ANTLR 4.13.2
 // jshint ignore: start
 import antlr4 from 'antlr4';
 

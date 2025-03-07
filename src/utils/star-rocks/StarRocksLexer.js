@@ -1,4 +1,4 @@
-// Generated from C:/Users/chenzhihui/Desktop/StarRocks.g4 by ANTLR 4.13.2
+// Generated from D:/project-github/antlr4-test/public/g4/StarRocks.g4 by ANTLR 4.13.2
 // jshint ignore: start
 import antlr4 from 'antlr4';
 
@@ -2068,10 +2068,13 @@ export default class StarRocksLexer extends antlr4.Lexer {
         super(input)
         this._interp = new antlr4.atn.LexerATNSimulator(this, atn, decisionsToDFA, new antlr4.atn.PredictionContextCache());
 
-        private long sqlMode = com.starrocks.qe.SqlModeHelper.MODE_DEFAULT;
-        public void setSqlMode(long newSqlMode) {
-            sqlMode = newSqlMode;
-        }
+            this.MODE_DEFAULT = 32;
+          this.MODE_PIPES_AS_CONCAT = 1 << 1;
+          this.sqlMode = this.MODE_DEFAULT;
+
+          this.setSqlMode = function(newSqlMode) {
+            this.sqlMode = newSqlMode;
+          };
 
     }
 }

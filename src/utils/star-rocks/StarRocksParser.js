@@ -1,4 +1,4 @@
-// Generated from C:/Users/chenzhihui/Desktop/StarRocks.g4 by ANTLR 4.13.2
+// Generated from D:/project-github/antlr4-test/public/g4/StarRocks.g4 by ANTLR 4.13.2
 // jshint ignore: start
 import antlr4 from 'antlr4';
 import StarRocksListener from './StarRocksListener.js';
@@ -3183,452 +3183,452 @@ const sharedContextCache = new antlr4.atn.PredictionContextCache();
 export default class StarRocksParser extends antlr4.Parser {
 
     static grammarFileName = "StarRocks.g4";
-    static literalNames = [ null, "'.'", "'('", "','", "')'", "'=>'", "'['", 
-                            "']'", "':'", "'{'", "'}'", "'ACCESS'", "'ACTIVE'", 
-                            "'ADD'", "'ADMIN'", "'ADVISOR'", "'AFTER'", 
-                            "'AGGREGATE'", "'ALL'", "'ALTER'", "'ANALYZE'", 
-                            "'AND'", "'ANTI'", "'APPLY'", "'ARRAY'", "'ARRAY_AGG'", 
-                            "'ARRAY_AGG_DISTINCT'", "'AS'", "'ASC'", "'ASYNC'", 
-                            "'AUTHORS'", "'AUTHENTICATION'", "'AUTOMATED'", 
-                            "'AUTO_INCREMENT'", "'AVG'", "'BACKEND'", "'BACKENDS'", 
-                            "'BACKUP'", "'BASE'", "'BASELINE'", "'BEGIN'", 
-                            "'BETWEEN'", "'BIGINT'", "'BINARY'", "'BITMAP'", 
-                            "'BITMAP_UNION'", "'BLACKHOLE'", "'BLACKLIST'", 
-                            "'BODY'", "'BOOLEAN'", "'BOTH'", "'BRANCH'", 
-                            "'BROKER'", "'BUCKETS'", "'BUILTIN'", "'BY'", 
-                            "'CACHE'", "'CANCEL'", "'CASE'", "'CAST'", "'CATALOG'", 
-                            "'CATALOGS'", "'CEIL'", "'CHAIN'", "'CHAR'", 
-                            "'CHARACTER'", "'CHARSET'", "'CHECK'", "'CLEAN'", 
-                            "'CLEAR'", "'CLUSTER'", "'CLUSTERS'", "'COLLATE'", 
-                            "'COLLATION'", "'COLUMN'", "'COLUMNS'", "'COMMENT'", 
-                            "'COMMIT'", "'COMMITTED'", "'COMPACT'", "'COMPACTION'", 
-                            "'COMPUTE'", "'CONFIG'", "'CONNECTION'", "'CONSISTENT'", 
-                            "'CONVERT'", "'COSTS'", "'COUNT'", "'CREATE'", 
-                            "'CROSS'", "'CUBE'", "'CUME_DIST'", "'CUMULATIVE'", 
-                            "'CURRENT'", "'CURRENT_DATE'", "'CURRENT_ROLE'", 
-                            "'CURRENT_TIME'", "'CURRENT_TIMESTAMP'", "'CURRENT_USER'", 
-                            "'DATA'", "'DATACACHE'", "'DATABASE'", "'DATABASES'", 
-                            "'DATE'", "'DATETIME'", "'DAY'", "'DAYS'", "'DEALLOCATE'", 
-                            "'DECIMAL'", "'DECIMALV2'", "'DECIMAL32'", "'DECIMAL64'", 
-                            "'DECIMAL128'", "'DECOMMISSION'", "'DEFAULT'", 
-                            "'DELETE'", "'DENSE_RANK'", "'DEFERRED'", "'DIALECT'", 
-                            "'DICTIONARY'", "'DICTIONARY_GET'", "'NTILE'", 
-                            "'DESC'", "'DESCRIBE'", "'DISABLE'", "'DISTINCT'", 
-                            "'DISTRIBUTED'", "'DISTRIBUTION'", "'DOUBLE'", 
-                            "'DROP'", "'DUAL'", "'DUPLICATE'", "'DYNAMIC'", 
-                            "'ELSE'", "'ENABLE'", "'ENCLOSE'", "'END'", 
-                            "'ENGINE'", "'ENGINES'", "'ERRORS'", "'ESCAPE'", 
-                            "'EVENTS'", "'EXCEPT'", "'EXECUTE'", "'EXISTS'", 
-                            "'EXPLAIN'", "'EXPORT'", "'EXTERNAL'", "'EXTRACT'", 
-                            "'EVERY'", "'FAILPOINT'", "'FAILPOINTS'", "'FALSE'", 
-                            "'FIELDS'", "'FILE'", "'FILES'", "'FILTER'", 
-                            "'FIRST'", "'FIRST_VALUE'", "'FLOAT'", "'FLOOR'", 
-                            "'FN'", "'FOLLOWING'", "'FOLLOWER'", "'FOR'", 
-                            "'FORCE'", "'FORMAT'", "'FREE'", "'FROM'", "'FRONTEND'", 
-                            "'FRONTENDS'", "'FULL'", "'FUNCTION'", "'FUNCTIONS'", 
-                            "'GLOBAL'", "'GRANT'", "'GRANTS'", "'GROUP'", 
-                            "'GROUPS'", "'GROUPING'", "'GROUPING_ID'", "'GROUP_CONCAT'", 
-                            "'HASH'", "'HAVING'", "'HELP'", "'HISTOGRAM'", 
-                            "'HLL'", "'HLL_UNION'", "'HOST'", "'HOUR'", 
-                            "'HOURS'", "'HUB'", "'IDENTIFIED'", "'IF'", 
-                            "'IMPERSONATE'", "'IMMEDIATE'", "'IGNORE'", 
-                            "'IMAGE'", "'IN'", "'INACTIVE'", "'INCREMENTAL'", 
-                            "'INDEX'", "'INDEXES'", "'INFILE'", "'INNER'", 
-                            "'INSTALL'", "'INSERT'", "'INT'", "'INTEGER'", 
-                            "'INTEGRATION'", "'INTEGRATIONS'", "'INTERMEDIATE'", 
-                            "'INTERSECT'", "'INTERVAL'", "'INTO'", "'INVOKER'", 
-                            "'GIN'", "'OVERWRITE'", "'IS'", "'ISOLATION'", 
-                            "'JOB'", "'JOIN'", "'JSON'", "'KEY'", "'KEYS'", 
-                            "'KILL'", "'LABEL'", "'LAG'", "'LARGEINT'", 
-                            "'LAST'", "'LAST_VALUE'", "'LATERAL'", "'LEAD'", 
-                            "'LEFT'", "'LESS'", "'LEVEL'", "'LIKE'", "'LIMIT'", 
-                            "'LIST'", "'LOAD'", "'LOCAL'", "'LOCALTIME'", 
-                            "'LOCALTIMESTAMP'", "'LOCATION'", "'LOCATIONS'", 
-                            "'LOGS'", "'LOGICAL'", "'MANUAL'", "'MAP'", 
-                            "'MAPPING'", "'MAPPINGS'", "'MASKING'", "'MATCH'", 
-                            "'MATERIALIZED'", "'MAX'", "'MAXVALUE'", "'MERGE'", 
-                            "'MICROSECOND'", "'MILLISECOND'", "'MIN'", "'MINUTE'", 
-                            "'MINUTES'", "'MINUS'", "'META'", "'MOD'", "'MODE'", 
-                            "'MODIFY'", "'MONTH'", "'NAME'", "'NAMES'", 
-                            "'NEGATIVE'", "'NGRAMBF'", "'NO'", "'NODE'", 
-                            "'NODES'", "'NONE'", "'NOT'", "'NULL'", "'NULLS'", 
-                            "'NUMBER'", "'NUMERIC'", "'OBSERVER'", "'OF'", 
-                            "'OFF'", "'OFFSET'", "'ON'", "'ONLY'", "'OPEN'", 
-                            "'OPERATE'", "'OPTIMIZE'", "'OPTIMIZER'", "'OPTION'", 
-                            "'OR'", "'ORDER'", "'OUTER'", "'OUTFILE'", "'OVER'", 
-                            "'?'", "'PARTITION'", "'PARTITIONS'", "'PASSWORD'", 
-                            "'PATH'", "'PAUSE'", "'PENDING'", "'PERCENT_RANK'", 
-                            "'PERCENTILE'", "'PERCENTILE_UNION'", "'PLAN'", 
-                            "'PLUGIN'", "'PLUGINS'", "'PIPE'", "'PIPES'", 
-                            "'PIVOT'", "'POLICY'", "'POLICIES'", "'PRECEDING'", 
-                            "'PREDICATE'", "'PREPARE'", "'PRIMARY'", "'PRIORITY'", 
-                            "'PRIVILEGES'", "'PROBABILITY'", "'PROC'", "'PROCEDURE'", 
-                            "'PROCESSLIST'", "'PROFILE'", "'PROFILELIST'", 
-                            "'PROPERTIES'", "'PROPERTY'", "'PROVIDER'", 
-                            "'PROVIDERS'", "'QUALIFY'", "'QUARTER'", "'QUERY'", 
-                            "'QUERIES'", "'QUEUE'", "'QUOTA'", "'RANDOM'", 
-                            "'RANGE'", "'RANK'", "'READ'", "'REASON'", "'RECOVER'", 
-                            "'REFRESH'", "'REWRITE'", "'REGEXP'", "'RELEASE'", 
-                            "'REMOVE'", "'RENAME'", "'REPAIR'", "'REPEATABLE'", 
-                            "'REPLACE'", "'REPLACE_IF_NOT_NULL'", "'REPLICA'", 
-                            "'REPOSITORY'", "'REPOSITORIES'", "'RESOURCE'", 
-                            "'RESOURCES'", "'RESTORE'", "'RESUME'", "'RETAIN'", 
-                            "'RETENTION'", "'RETURNS'", "'RETRY'", "'REVOKE'", 
-                            "'REVERT'", "'RIGHT'", "'RLIKE'", "'ROLE'", 
-                            "'ROLES'", "'ROLLBACK'", "'ROLLUP'", "'ROUTINE'", 
-                            "'ROW'", "'ROWS'", "'ROW_NUMBER'", "'RULE'", 
-                            "'RULES'", "'RUNNING'", "'SAMPLE'", "'SCHEDULE'", 
-                            "'SCHEDULER'", "'SCHEMA'", "'SCHEMAS'", "'SECOND'", 
-                            "'SECURITY'", "'SELECT'", "'SEMI'", "'SEPARATOR'", 
-                            "'SERIALIZABLE'", "'SESSION'", "'SET'", "'SETS'", 
-                            "'SET_VAR'", "'SIGNED'", "'SKIP_HEADER'", "'SHOW'", 
-                            "'SMALLINT'", "'SNAPSHOT'", "'SNAPSHOTS'", "'SQLBLACKLIST'", 
-                            "'STARROCKS'", "'START'", "'STATS'", "'STATUS'", 
-                            "'STOP'", "'STORAGE'", "'STREAM'", "'STRING'", 
-                            "'TEXT'", "'SUBMIT'", "'SUM'", "'SUSPEND'", 
-                            "'SYNC'", "'SYSTEM'", "'SYSTEM_TIME'", "'SWAP'", 
-                            "'STRUCT'", "'TABLE'", "'TABLES'", "'TABLET'", 
-                            "'TABLETS'", "'TAG'", "'TASK'", "'TEMPORARY'", 
-                            "'TERMINATED'", "'THAN'", "'THEN'", "'TIME'", 
-                            "'TIMES'", "'TIMESTAMP'", "'TIMESTAMPADD'", 
-                            "'TIMESTAMPDIFF'", "'TINYINT'", "'TRANSACTION'", 
-                            "'TRANSLATE'", "'TO'", "'TRACE'", "'TRIGGERS'", 
-                            "'TRIM_SPACE'", "'TRUE'", "'TRUNCATE'", "'TYPE'", 
-                            "'TYPES'", "'UNBOUNDED'", "'UNCOMMITTED'", "'UNION'", 
-                            "'UNIQUE'", "'UNINSTALL'", "'UNSET'", "'UNSIGNED'", 
-                            "'UPDATE'", "'USAGE'", "'USE'", "'USER'", "'USERS'", 
-                            "'USING'", "'VALUE'", "'VALUES'", "'VARBINARY'", 
-                            "'VARCHAR'", "'VARIABLES'", "'VECTOR'", "'VERBOSE'", 
-                            "'VERSION'", "'VIEW'", "'VIEWS'", "'VOLUME'", 
-                            "'VOLUMES'", "'WAREHOUSE'", "'WAREHOUSES'", 
-                            "'WARNINGS'", "'WEEK'", "'WHEN'", "'WHERE'", 
-                            "'WHITELIST'", "'WITH'", "'WORK'", "'WRITE'", 
-                            "'YEAR'", "'LOCK'", "'UNLOCK'", "'LOW_PRIORITY'", 
-                            "'DISK'", "'BEFORE'", "'$$'", "'FIELD'", "'PERSISTENT'", 
-                            "'='", null, "'<'", "'<='", "'>'", "'>='", "'<=>'", 
-                            "'[*]'", "'+'", "'-'", "'*'", "'/'", "'%'", 
-                            "'||'", "'&&'", "'!'", "'DIV'", "'&'", "'|'", 
-                            "'^'", "'~'", "'BITSHIFTLEFT'", "'BITSHIFTRIGHT'", 
-                            "'BITSHIFTRIGHTLOGICAL'", "'->'", "'@'", null, 
-                            null, null, null, null, null, null, null, null, 
+    static literalNames = [ null, "'.'", "'('", "','", "')'", "'=>'", "'['",
+                            "']'", "':'", "'{'", "'}'", "'ACCESS'", "'ACTIVE'",
+                            "'ADD'", "'ADMIN'", "'ADVISOR'", "'AFTER'",
+                            "'AGGREGATE'", "'ALL'", "'ALTER'", "'ANALYZE'",
+                            "'AND'", "'ANTI'", "'APPLY'", "'ARRAY'", "'ARRAY_AGG'",
+                            "'ARRAY_AGG_DISTINCT'", "'AS'", "'ASC'", "'ASYNC'",
+                            "'AUTHORS'", "'AUTHENTICATION'", "'AUTOMATED'",
+                            "'AUTO_INCREMENT'", "'AVG'", "'BACKEND'", "'BACKENDS'",
+                            "'BACKUP'", "'BASE'", "'BASELINE'", "'BEGIN'",
+                            "'BETWEEN'", "'BIGINT'", "'BINARY'", "'BITMAP'",
+                            "'BITMAP_UNION'", "'BLACKHOLE'", "'BLACKLIST'",
+                            "'BODY'", "'BOOLEAN'", "'BOTH'", "'BRANCH'",
+                            "'BROKER'", "'BUCKETS'", "'BUILTIN'", "'BY'",
+                            "'CACHE'", "'CANCEL'", "'CASE'", "'CAST'", "'CATALOG'",
+                            "'CATALOGS'", "'CEIL'", "'CHAIN'", "'CHAR'",
+                            "'CHARACTER'", "'CHARSET'", "'CHECK'", "'CLEAN'",
+                            "'CLEAR'", "'CLUSTER'", "'CLUSTERS'", "'COLLATE'",
+                            "'COLLATION'", "'COLUMN'", "'COLUMNS'", "'COMMENT'",
+                            "'COMMIT'", "'COMMITTED'", "'COMPACT'", "'COMPACTION'",
+                            "'COMPUTE'", "'CONFIG'", "'CONNECTION'", "'CONSISTENT'",
+                            "'CONVERT'", "'COSTS'", "'COUNT'", "'CREATE'",
+                            "'CROSS'", "'CUBE'", "'CUME_DIST'", "'CUMULATIVE'",
+                            "'CURRENT'", "'CURRENT_DATE'", "'CURRENT_ROLE'",
+                            "'CURRENT_TIME'", "'CURRENT_TIMESTAMP'", "'CURRENT_USER'",
+                            "'DATA'", "'DATACACHE'", "'DATABASE'", "'DATABASES'",
+                            "'DATE'", "'DATETIME'", "'DAY'", "'DAYS'", "'DEALLOCATE'",
+                            "'DECIMAL'", "'DECIMALV2'", "'DECIMAL32'", "'DECIMAL64'",
+                            "'DECIMAL128'", "'DECOMMISSION'", "'DEFAULT'",
+                            "'DELETE'", "'DENSE_RANK'", "'DEFERRED'", "'DIALECT'",
+                            "'DICTIONARY'", "'DICTIONARY_GET'", "'NTILE'",
+                            "'DESC'", "'DESCRIBE'", "'DISABLE'", "'DISTINCT'",
+                            "'DISTRIBUTED'", "'DISTRIBUTION'", "'DOUBLE'",
+                            "'DROP'", "'DUAL'", "'DUPLICATE'", "'DYNAMIC'",
+                            "'ELSE'", "'ENABLE'", "'ENCLOSE'", "'END'",
+                            "'ENGINE'", "'ENGINES'", "'ERRORS'", "'ESCAPE'",
+                            "'EVENTS'", "'EXCEPT'", "'EXECUTE'", "'EXISTS'",
+                            "'EXPLAIN'", "'EXPORT'", "'EXTERNAL'", "'EXTRACT'",
+                            "'EVERY'", "'FAILPOINT'", "'FAILPOINTS'", "'FALSE'",
+                            "'FIELDS'", "'FILE'", "'FILES'", "'FILTER'",
+                            "'FIRST'", "'FIRST_VALUE'", "'FLOAT'", "'FLOOR'",
+                            "'FN'", "'FOLLOWING'", "'FOLLOWER'", "'FOR'",
+                            "'FORCE'", "'FORMAT'", "'FREE'", "'FROM'", "'FRONTEND'",
+                            "'FRONTENDS'", "'FULL'", "'FUNCTION'", "'FUNCTIONS'",
+                            "'GLOBAL'", "'GRANT'", "'GRANTS'", "'GROUP'",
+                            "'GROUPS'", "'GROUPING'", "'GROUPING_ID'", "'GROUP_CONCAT'",
+                            "'HASH'", "'HAVING'", "'HELP'", "'HISTOGRAM'",
+                            "'HLL'", "'HLL_UNION'", "'HOST'", "'HOUR'",
+                            "'HOURS'", "'HUB'", "'IDENTIFIED'", "'IF'",
+                            "'IMPERSONATE'", "'IMMEDIATE'", "'IGNORE'",
+                            "'IMAGE'", "'IN'", "'INACTIVE'", "'INCREMENTAL'",
+                            "'INDEX'", "'INDEXES'", "'INFILE'", "'INNER'",
+                            "'INSTALL'", "'INSERT'", "'INT'", "'INTEGER'",
+                            "'INTEGRATION'", "'INTEGRATIONS'", "'INTERMEDIATE'",
+                            "'INTERSECT'", "'INTERVAL'", "'INTO'", "'INVOKER'",
+                            "'GIN'", "'OVERWRITE'", "'IS'", "'ISOLATION'",
+                            "'JOB'", "'JOIN'", "'JSON'", "'KEY'", "'KEYS'",
+                            "'KILL'", "'LABEL'", "'LAG'", "'LARGEINT'",
+                            "'LAST'", "'LAST_VALUE'", "'LATERAL'", "'LEAD'",
+                            "'LEFT'", "'LESS'", "'LEVEL'", "'LIKE'", "'LIMIT'",
+                            "'LIST'", "'LOAD'", "'LOCAL'", "'LOCALTIME'",
+                            "'LOCALTIMESTAMP'", "'LOCATION'", "'LOCATIONS'",
+                            "'LOGS'", "'LOGICAL'", "'MANUAL'", "'MAP'",
+                            "'MAPPING'", "'MAPPINGS'", "'MASKING'", "'MATCH'",
+                            "'MATERIALIZED'", "'MAX'", "'MAXVALUE'", "'MERGE'",
+                            "'MICROSECOND'", "'MILLISECOND'", "'MIN'", "'MINUTE'",
+                            "'MINUTES'", "'MINUS'", "'META'", "'MOD'", "'MODE'",
+                            "'MODIFY'", "'MONTH'", "'NAME'", "'NAMES'",
+                            "'NEGATIVE'", "'NGRAMBF'", "'NO'", "'NODE'",
+                            "'NODES'", "'NONE'", "'NOT'", "'NULL'", "'NULLS'",
+                            "'NUMBER'", "'NUMERIC'", "'OBSERVER'", "'OF'",
+                            "'OFF'", "'OFFSET'", "'ON'", "'ONLY'", "'OPEN'",
+                            "'OPERATE'", "'OPTIMIZE'", "'OPTIMIZER'", "'OPTION'",
+                            "'OR'", "'ORDER'", "'OUTER'", "'OUTFILE'", "'OVER'",
+                            "'?'", "'PARTITION'", "'PARTITIONS'", "'PASSWORD'",
+                            "'PATH'", "'PAUSE'", "'PENDING'", "'PERCENT_RANK'",
+                            "'PERCENTILE'", "'PERCENTILE_UNION'", "'PLAN'",
+                            "'PLUGIN'", "'PLUGINS'", "'PIPE'", "'PIPES'",
+                            "'PIVOT'", "'POLICY'", "'POLICIES'", "'PRECEDING'",
+                            "'PREDICATE'", "'PREPARE'", "'PRIMARY'", "'PRIORITY'",
+                            "'PRIVILEGES'", "'PROBABILITY'", "'PROC'", "'PROCEDURE'",
+                            "'PROCESSLIST'", "'PROFILE'", "'PROFILELIST'",
+                            "'PROPERTIES'", "'PROPERTY'", "'PROVIDER'",
+                            "'PROVIDERS'", "'QUALIFY'", "'QUARTER'", "'QUERY'",
+                            "'QUERIES'", "'QUEUE'", "'QUOTA'", "'RANDOM'",
+                            "'RANGE'", "'RANK'", "'READ'", "'REASON'", "'RECOVER'",
+                            "'REFRESH'", "'REWRITE'", "'REGEXP'", "'RELEASE'",
+                            "'REMOVE'", "'RENAME'", "'REPAIR'", "'REPEATABLE'",
+                            "'REPLACE'", "'REPLACE_IF_NOT_NULL'", "'REPLICA'",
+                            "'REPOSITORY'", "'REPOSITORIES'", "'RESOURCE'",
+                            "'RESOURCES'", "'RESTORE'", "'RESUME'", "'RETAIN'",
+                            "'RETENTION'", "'RETURNS'", "'RETRY'", "'REVOKE'",
+                            "'REVERT'", "'RIGHT'", "'RLIKE'", "'ROLE'",
+                            "'ROLES'", "'ROLLBACK'", "'ROLLUP'", "'ROUTINE'",
+                            "'ROW'", "'ROWS'", "'ROW_NUMBER'", "'RULE'",
+                            "'RULES'", "'RUNNING'", "'SAMPLE'", "'SCHEDULE'",
+                            "'SCHEDULER'", "'SCHEMA'", "'SCHEMAS'", "'SECOND'",
+                            "'SECURITY'", "'SELECT'", "'SEMI'", "'SEPARATOR'",
+                            "'SERIALIZABLE'", "'SESSION'", "'SET'", "'SETS'",
+                            "'SET_VAR'", "'SIGNED'", "'SKIP_HEADER'", "'SHOW'",
+                            "'SMALLINT'", "'SNAPSHOT'", "'SNAPSHOTS'", "'SQLBLACKLIST'",
+                            "'STARROCKS'", "'START'", "'STATS'", "'STATUS'",
+                            "'STOP'", "'STORAGE'", "'STREAM'", "'STRING'",
+                            "'TEXT'", "'SUBMIT'", "'SUM'", "'SUSPEND'",
+                            "'SYNC'", "'SYSTEM'", "'SYSTEM_TIME'", "'SWAP'",
+                            "'STRUCT'", "'TABLE'", "'TABLES'", "'TABLET'",
+                            "'TABLETS'", "'TAG'", "'TASK'", "'TEMPORARY'",
+                            "'TERMINATED'", "'THAN'", "'THEN'", "'TIME'",
+                            "'TIMES'", "'TIMESTAMP'", "'TIMESTAMPADD'",
+                            "'TIMESTAMPDIFF'", "'TINYINT'", "'TRANSACTION'",
+                            "'TRANSLATE'", "'TO'", "'TRACE'", "'TRIGGERS'",
+                            "'TRIM_SPACE'", "'TRUE'", "'TRUNCATE'", "'TYPE'",
+                            "'TYPES'", "'UNBOUNDED'", "'UNCOMMITTED'", "'UNION'",
+                            "'UNIQUE'", "'UNINSTALL'", "'UNSET'", "'UNSIGNED'",
+                            "'UPDATE'", "'USAGE'", "'USE'", "'USER'", "'USERS'",
+                            "'USING'", "'VALUE'", "'VALUES'", "'VARBINARY'",
+                            "'VARCHAR'", "'VARIABLES'", "'VECTOR'", "'VERBOSE'",
+                            "'VERSION'", "'VIEW'", "'VIEWS'", "'VOLUME'",
+                            "'VOLUMES'", "'WAREHOUSE'", "'WAREHOUSES'",
+                            "'WARNINGS'", "'WEEK'", "'WHEN'", "'WHERE'",
+                            "'WHITELIST'", "'WITH'", "'WORK'", "'WRITE'",
+                            "'YEAR'", "'LOCK'", "'UNLOCK'", "'LOW_PRIORITY'",
+                            "'DISK'", "'BEFORE'", "'$$'", "'FIELD'", "'PERSISTENT'",
+                            "'='", null, "'<'", "'<='", "'>'", "'>='", "'<=>'",
+                            "'[*]'", "'+'", "'-'", "'*'", "'/'", "'%'",
+                            "'||'", "'&&'", "'!'", "'DIV'", "'&'", "'|'",
+                            "'^'", "'~'", "'BITSHIFTLEFT'", "'BITSHIFTRIGHT'",
+                            "'BITSHIFTRIGHTLOGICAL'", "'->'", "'@'", null,
+                            null, null, null, null, null, null, null, null,
                             null, null, null, null, null, "';'", "'...'" ];
-    static symbolicNames = [ null, null, null, null, null, null, null, null, 
-                             null, null, null, "ACCESS", "ACTIVE", "ADD", 
-                             "ADMIN", "ADVISOR", "AFTER", "AGGREGATE", "ALL", 
-                             "ALTER", "ANALYZE", "AND", "ANTI", "APPLY", 
-                             "ARRAY", "ARRAY_AGG", "ARRAY_AGG_DISTINCT", 
-                             "AS", "ASC", "ASYNC", "AUTHORS", "AUTHENTICATION", 
-                             "AUTOMATED", "AUTO_INCREMENT", "AVG", "BACKEND", 
-                             "BACKENDS", "BACKUP", "BASE", "BASELINE", "BEGIN", 
-                             "BETWEEN", "BIGINT", "BINARY", "BITMAP", "BITMAP_UNION", 
-                             "BLACKHOLE", "BLACKLIST", "BODY", "BOOLEAN", 
-                             "BOTH", "BRANCH", "BROKER", "BUCKETS", "BUILTIN", 
-                             "BY", "CACHE", "CANCEL", "CASE", "CAST", "CATALOG", 
-                             "CATALOGS", "CEIL", "CHAIN", "CHAR", "CHARACTER", 
-                             "CHARSET", "CHECK", "CLEAN", "CLEAR", "CLUSTER", 
-                             "CLUSTERS", "COLLATE", "COLLATION", "COLUMN", 
-                             "COLUMNS", "COMMENT", "COMMIT", "COMMITTED", 
-                             "COMPACT", "COMPACTION", "COMPUTE", "CONFIG", 
-                             "CONNECTION", "CONSISTENT", "CONVERT", "COSTS", 
-                             "COUNT", "CREATE", "CROSS", "CUBE", "CUME_DIST", 
-                             "CUMULATIVE", "CURRENT", "CURRENT_DATE", "CURRENT_ROLE", 
-                             "CURRENT_TIME", "CURRENT_TIMESTAMP", "CURRENT_USER", 
-                             "DATA", "DATACACHE", "DATABASE", "DATABASES", 
-                             "DATE", "DATETIME", "DAY", "DAYS", "DEALLOCATE", 
-                             "DECIMAL", "DECIMALV2", "DECIMAL32", "DECIMAL64", 
-                             "DECIMAL128", "DECOMMISSION", "DEFAULT", "DELETE", 
-                             "DENSE_RANK", "DEFERRED", "DIALECT", "DICTIONARY", 
-                             "DICTIONARY_GET", "NTILE", "DESC", "DESCRIBE", 
-                             "DISABLE", "DISTINCT", "DISTRIBUTED", "DISTRIBUTION", 
-                             "DOUBLE", "DROP", "DUAL", "DUPLICATE", "DYNAMIC", 
-                             "ELSE", "ENABLE", "ENCLOSE", "END", "ENGINE", 
-                             "ENGINES", "ERRORS", "ESCAPE", "EVENTS", "EXCEPT", 
-                             "EXECUTE", "EXISTS", "EXPLAIN", "EXPORT", "EXTERNAL", 
-                             "EXTRACT", "EVERY", "FAILPOINT", "FAILPOINTS", 
-                             "FALSE", "FIELDS", "FILE", "FILES", "FILTER", 
-                             "FIRST", "FIRST_VALUE", "FLOAT", "FLOOR", "FN", 
-                             "FOLLOWING", "FOLLOWER", "FOR", "FORCE", "FORMAT", 
-                             "FREE", "FROM", "FRONTEND", "FRONTENDS", "FULL", 
-                             "FUNCTION", "FUNCTIONS", "GLOBAL", "GRANT", 
-                             "GRANTS", "GROUP", "GROUPS", "GROUPING", "GROUPING_ID", 
-                             "GROUP_CONCAT", "HASH", "HAVING", "HELP", "HISTOGRAM", 
-                             "HLL", "HLL_UNION", "HOST", "HOUR", "HOURS", 
-                             "HUB", "IDENTIFIED", "IF", "IMPERSONATE", "IMMEDIATE", 
-                             "IGNORE", "IMAGE", "IN", "INACTIVE", "INCREMENTAL", 
-                             "INDEX", "INDEXES", "INFILE", "INNER", "INSTALL", 
-                             "INSERT", "INT", "INTEGER", "INTEGRATION", 
-                             "INTEGRATIONS", "INTERMEDIATE", "INTERSECT", 
-                             "INTERVAL", "INTO", "INVOKER", "GIN", "OVERWRITE", 
-                             "IS", "ISOLATION", "JOB", "JOIN", "JSON", "KEY", 
-                             "KEYS", "KILL", "LABEL", "LAG", "LARGEINT", 
-                             "LAST", "LAST_VALUE", "LATERAL", "LEAD", "LEFT", 
-                             "LESS", "LEVEL", "LIKE", "LIMIT", "LIST", "LOAD", 
-                             "LOCAL", "LOCALTIME", "LOCALTIMESTAMP", "LOCATION", 
-                             "LOCATIONS", "LOGS", "LOGICAL", "MANUAL", "MAP", 
-                             "MAPPING", "MAPPINGS", "MASKING", "MATCH", 
-                             "MATERIALIZED", "MAX", "MAXVALUE", "MERGE", 
-                             "MICROSECOND", "MILLISECOND", "MIN", "MINUTE", 
-                             "MINUTES", "MINUS", "META", "MOD", "MODE", 
-                             "MODIFY", "MONTH", "NAME", "NAMES", "NEGATIVE", 
-                             "NGRAMBF", "NO", "NODE", "NODES", "NONE", "NOT", 
-                             "NULL", "NULLS", "NUMBER", "NUMERIC", "OBSERVER", 
-                             "OF", "OFF", "OFFSET", "ON", "ONLY", "OPEN", 
-                             "OPERATE", "OPTIMIZE", "OPTIMIZER", "OPTION", 
-                             "OR", "ORDER", "OUTER", "OUTFILE", "OVER", 
-                             "PARAMETER", "PARTITION", "PARTITIONS", "PASSWORD", 
-                             "PATH", "PAUSE", "PENDING", "PERCENT_RANK", 
-                             "PERCENTILE", "PERCENTILE_UNION", "PLAN", "PLUGIN", 
-                             "PLUGINS", "PIPE", "PIPES", "PIVOT", "POLICY", 
-                             "POLICIES", "PRECEDING", "PREDICATE", "PREPARE", 
-                             "PRIMARY", "PRIORITY", "PRIVILEGES", "PROBABILITY", 
-                             "PROC", "PROCEDURE", "PROCESSLIST", "PROFILE", 
-                             "PROFILELIST", "PROPERTIES", "PROPERTY", "PROVIDER", 
-                             "PROVIDERS", "QUALIFY", "QUARTER", "QUERY", 
-                             "QUERIES", "QUEUE", "QUOTA", "RANDOM", "RANGE", 
-                             "RANK", "READ", "REASON", "RECOVER", "REFRESH", 
-                             "REWRITE", "REGEXP", "RELEASE", "REMOVE", "RENAME", 
-                             "REPAIR", "REPEATABLE", "REPLACE", "REPLACE_IF_NOT_NULL", 
-                             "REPLICA", "REPOSITORY", "REPOSITORIES", "RESOURCE", 
-                             "RESOURCES", "RESTORE", "RESUME", "RETAIN", 
-                             "RETENTION", "RETURNS", "RETRY", "REVOKE", 
-                             "REVERT", "RIGHT", "RLIKE", "ROLE", "ROLES", 
-                             "ROLLBACK", "ROLLUP", "ROUTINE", "ROW", "ROWS", 
-                             "ROW_NUMBER", "RULE", "RULES", "RUNNING", "SAMPLE", 
-                             "SCHEDULE", "SCHEDULER", "SCHEMA", "SCHEMAS", 
-                             "SECOND", "SECURITY", "SELECT", "SEMI", "SEPARATOR", 
-                             "SERIALIZABLE", "SESSION", "SET", "SETS", "SET_VAR", 
-                             "SIGNED", "SKIP_HEADER", "SHOW", "SMALLINT", 
-                             "SNAPSHOT", "SNAPSHOTS", "SQLBLACKLIST", "STARROCKS", 
-                             "START", "STATS", "STATUS", "STOP", "STORAGE", 
-                             "STREAM", "STRING", "TEXT", "SUBMIT", "SUM", 
-                             "SUSPEND", "SYNC", "SYSTEM", "SYSTEM_TIME", 
-                             "SWAP", "STRUCT", "TABLE", "TABLES", "TABLET", 
-                             "TABLETS", "TAG", "TASK", "TEMPORARY", "TERMINATED", 
-                             "THAN", "THEN", "TIME", "TIMES", "TIMESTAMP", 
-                             "TIMESTAMPADD", "TIMESTAMPDIFF", "TINYINT", 
-                             "TRANSACTION", "TRANSLATE", "TO", "TRACE", 
-                             "TRIGGERS", "TRIM_SPACE", "TRUE", "TRUNCATE", 
-                             "TYPE", "TYPES", "UNBOUNDED", "UNCOMMITTED", 
-                             "UNION", "UNIQUE", "UNINSTALL", "UNSET", "UNSIGNED", 
-                             "UPDATE", "USAGE", "USE", "USER", "USERS", 
-                             "USING", "VALUE", "VALUES", "VARBINARY", "VARCHAR", 
-                             "VARIABLES", "VECTOR", "VERBOSE", "VERSION", 
-                             "VIEW", "VIEWS", "VOLUME", "VOLUMES", "WAREHOUSE", 
-                             "WAREHOUSES", "WARNINGS", "WEEK", "WHEN", "WHERE", 
-                             "WHITELIST", "WITH", "WORK", "WRITE", "YEAR", 
-                             "LOCK", "UNLOCK", "LOW_PRIORITY", "DISK", "BEFORE", 
-                             "DOUBLE_DOLLAR", "FIELD", "PERSISTENT", "EQ", 
-                             "NEQ", "LT", "LTE", "GT", "GTE", "EQ_FOR_NULL", 
-                             "ARRAY_ELEMENT", "PLUS_SYMBOL", "MINUS_SYMBOL", 
-                             "ASTERISK_SYMBOL", "SLASH_SYMBOL", "PERCENT_SYMBOL", 
-                             "LOGICAL_OR", "LOGICAL_AND", "LOGICAL_NOT", 
-                             "INT_DIV", "BITAND", "BITOR", "BITXOR", "BITNOT", 
-                             "BIT_SHIFT_LEFT", "BIT_SHIFT_RIGHT", "BIT_SHIFT_RIGHT_LOGICAL", 
-                             "ARROW", "AT", "INTEGER_VALUE", "DECIMAL_VALUE", 
-                             "DOUBLE_VALUE", "SINGLE_QUOTED_TEXT", "DOUBLE_QUOTED_TEXT", 
-                             "BINARY_SINGLE_QUOTED_TEXT", "BINARY_DOUBLE_QUOTED_TEXT", 
-                             "LETTER_IDENTIFIER", "DIGIT_IDENTIFIER", "BACKQUOTED_IDENTIFIER", 
-                             "DOT_IDENTIFIER", "SIMPLE_COMMENT", "BRACKETED_COMMENT", 
-                             "OPTIMIZER_HINT", "SEMICOLON", "DOTDOTDOT", 
+    static symbolicNames = [ null, null, null, null, null, null, null, null,
+                             null, null, null, "ACCESS", "ACTIVE", "ADD",
+                             "ADMIN", "ADVISOR", "AFTER", "AGGREGATE", "ALL",
+                             "ALTER", "ANALYZE", "AND", "ANTI", "APPLY",
+                             "ARRAY", "ARRAY_AGG", "ARRAY_AGG_DISTINCT",
+                             "AS", "ASC", "ASYNC", "AUTHORS", "AUTHENTICATION",
+                             "AUTOMATED", "AUTO_INCREMENT", "AVG", "BACKEND",
+                             "BACKENDS", "BACKUP", "BASE", "BASELINE", "BEGIN",
+                             "BETWEEN", "BIGINT", "BINARY", "BITMAP", "BITMAP_UNION",
+                             "BLACKHOLE", "BLACKLIST", "BODY", "BOOLEAN",
+                             "BOTH", "BRANCH", "BROKER", "BUCKETS", "BUILTIN",
+                             "BY", "CACHE", "CANCEL", "CASE", "CAST", "CATALOG",
+                             "CATALOGS", "CEIL", "CHAIN", "CHAR", "CHARACTER",
+                             "CHARSET", "CHECK", "CLEAN", "CLEAR", "CLUSTER",
+                             "CLUSTERS", "COLLATE", "COLLATION", "COLUMN",
+                             "COLUMNS", "COMMENT", "COMMIT", "COMMITTED",
+                             "COMPACT", "COMPACTION", "COMPUTE", "CONFIG",
+                             "CONNECTION", "CONSISTENT", "CONVERT", "COSTS",
+                             "COUNT", "CREATE", "CROSS", "CUBE", "CUME_DIST",
+                             "CUMULATIVE", "CURRENT", "CURRENT_DATE", "CURRENT_ROLE",
+                             "CURRENT_TIME", "CURRENT_TIMESTAMP", "CURRENT_USER",
+                             "DATA", "DATACACHE", "DATABASE", "DATABASES",
+                             "DATE", "DATETIME", "DAY", "DAYS", "DEALLOCATE",
+                             "DECIMAL", "DECIMALV2", "DECIMAL32", "DECIMAL64",
+                             "DECIMAL128", "DECOMMISSION", "DEFAULT", "DELETE",
+                             "DENSE_RANK", "DEFERRED", "DIALECT", "DICTIONARY",
+                             "DICTIONARY_GET", "NTILE", "DESC", "DESCRIBE",
+                             "DISABLE", "DISTINCT", "DISTRIBUTED", "DISTRIBUTION",
+                             "DOUBLE", "DROP", "DUAL", "DUPLICATE", "DYNAMIC",
+                             "ELSE", "ENABLE", "ENCLOSE", "END", "ENGINE",
+                             "ENGINES", "ERRORS", "ESCAPE", "EVENTS", "EXCEPT",
+                             "EXECUTE", "EXISTS", "EXPLAIN", "EXPORT", "EXTERNAL",
+                             "EXTRACT", "EVERY", "FAILPOINT", "FAILPOINTS",
+                             "FALSE", "FIELDS", "FILE", "FILES", "FILTER",
+                             "FIRST", "FIRST_VALUE", "FLOAT", "FLOOR", "FN",
+                             "FOLLOWING", "FOLLOWER", "FOR", "FORCE", "FORMAT",
+                             "FREE", "FROM", "FRONTEND", "FRONTENDS", "FULL",
+                             "FUNCTION", "FUNCTIONS", "GLOBAL", "GRANT",
+                             "GRANTS", "GROUP", "GROUPS", "GROUPING", "GROUPING_ID",
+                             "GROUP_CONCAT", "HASH", "HAVING", "HELP", "HISTOGRAM",
+                             "HLL", "HLL_UNION", "HOST", "HOUR", "HOURS",
+                             "HUB", "IDENTIFIED", "IF", "IMPERSONATE", "IMMEDIATE",
+                             "IGNORE", "IMAGE", "IN", "INACTIVE", "INCREMENTAL",
+                             "INDEX", "INDEXES", "INFILE", "INNER", "INSTALL",
+                             "INSERT", "INT", "INTEGER", "INTEGRATION",
+                             "INTEGRATIONS", "INTERMEDIATE", "INTERSECT",
+                             "INTERVAL", "INTO", "INVOKER", "GIN", "OVERWRITE",
+                             "IS", "ISOLATION", "JOB", "JOIN", "JSON", "KEY",
+                             "KEYS", "KILL", "LABEL", "LAG", "LARGEINT",
+                             "LAST", "LAST_VALUE", "LATERAL", "LEAD", "LEFT",
+                             "LESS", "LEVEL", "LIKE", "LIMIT", "LIST", "LOAD",
+                             "LOCAL", "LOCALTIME", "LOCALTIMESTAMP", "LOCATION",
+                             "LOCATIONS", "LOGS", "LOGICAL", "MANUAL", "MAP",
+                             "MAPPING", "MAPPINGS", "MASKING", "MATCH",
+                             "MATERIALIZED", "MAX", "MAXVALUE", "MERGE",
+                             "MICROSECOND", "MILLISECOND", "MIN", "MINUTE",
+                             "MINUTES", "MINUS", "META", "MOD", "MODE",
+                             "MODIFY", "MONTH", "NAME", "NAMES", "NEGATIVE",
+                             "NGRAMBF", "NO", "NODE", "NODES", "NONE", "NOT",
+                             "NULL", "NULLS", "NUMBER", "NUMERIC", "OBSERVER",
+                             "OF", "OFF", "OFFSET", "ON", "ONLY", "OPEN",
+                             "OPERATE", "OPTIMIZE", "OPTIMIZER", "OPTION",
+                             "OR", "ORDER", "OUTER", "OUTFILE", "OVER",
+                             "PARAMETER", "PARTITION", "PARTITIONS", "PASSWORD",
+                             "PATH", "PAUSE", "PENDING", "PERCENT_RANK",
+                             "PERCENTILE", "PERCENTILE_UNION", "PLAN", "PLUGIN",
+                             "PLUGINS", "PIPE", "PIPES", "PIVOT", "POLICY",
+                             "POLICIES", "PRECEDING", "PREDICATE", "PREPARE",
+                             "PRIMARY", "PRIORITY", "PRIVILEGES", "PROBABILITY",
+                             "PROC", "PROCEDURE", "PROCESSLIST", "PROFILE",
+                             "PROFILELIST", "PROPERTIES", "PROPERTY", "PROVIDER",
+                             "PROVIDERS", "QUALIFY", "QUARTER", "QUERY",
+                             "QUERIES", "QUEUE", "QUOTA", "RANDOM", "RANGE",
+                             "RANK", "READ", "REASON", "RECOVER", "REFRESH",
+                             "REWRITE", "REGEXP", "RELEASE", "REMOVE", "RENAME",
+                             "REPAIR", "REPEATABLE", "REPLACE", "REPLACE_IF_NOT_NULL",
+                             "REPLICA", "REPOSITORY", "REPOSITORIES", "RESOURCE",
+                             "RESOURCES", "RESTORE", "RESUME", "RETAIN",
+                             "RETENTION", "RETURNS", "RETRY", "REVOKE",
+                             "REVERT", "RIGHT", "RLIKE", "ROLE", "ROLES",
+                             "ROLLBACK", "ROLLUP", "ROUTINE", "ROW", "ROWS",
+                             "ROW_NUMBER", "RULE", "RULES", "RUNNING", "SAMPLE",
+                             "SCHEDULE", "SCHEDULER", "SCHEMA", "SCHEMAS",
+                             "SECOND", "SECURITY", "SELECT", "SEMI", "SEPARATOR",
+                             "SERIALIZABLE", "SESSION", "SET", "SETS", "SET_VAR",
+                             "SIGNED", "SKIP_HEADER", "SHOW", "SMALLINT",
+                             "SNAPSHOT", "SNAPSHOTS", "SQLBLACKLIST", "STARROCKS",
+                             "START", "STATS", "STATUS", "STOP", "STORAGE",
+                             "STREAM", "STRING", "TEXT", "SUBMIT", "SUM",
+                             "SUSPEND", "SYNC", "SYSTEM", "SYSTEM_TIME",
+                             "SWAP", "STRUCT", "TABLE", "TABLES", "TABLET",
+                             "TABLETS", "TAG", "TASK", "TEMPORARY", "TERMINATED",
+                             "THAN", "THEN", "TIME", "TIMES", "TIMESTAMP",
+                             "TIMESTAMPADD", "TIMESTAMPDIFF", "TINYINT",
+                             "TRANSACTION", "TRANSLATE", "TO", "TRACE",
+                             "TRIGGERS", "TRIM_SPACE", "TRUE", "TRUNCATE",
+                             "TYPE", "TYPES", "UNBOUNDED", "UNCOMMITTED",
+                             "UNION", "UNIQUE", "UNINSTALL", "UNSET", "UNSIGNED",
+                             "UPDATE", "USAGE", "USE", "USER", "USERS",
+                             "USING", "VALUE", "VALUES", "VARBINARY", "VARCHAR",
+                             "VARIABLES", "VECTOR", "VERBOSE", "VERSION",
+                             "VIEW", "VIEWS", "VOLUME", "VOLUMES", "WAREHOUSE",
+                             "WAREHOUSES", "WARNINGS", "WEEK", "WHEN", "WHERE",
+                             "WHITELIST", "WITH", "WORK", "WRITE", "YEAR",
+                             "LOCK", "UNLOCK", "LOW_PRIORITY", "DISK", "BEFORE",
+                             "DOUBLE_DOLLAR", "FIELD", "PERSISTENT", "EQ",
+                             "NEQ", "LT", "LTE", "GT", "GTE", "EQ_FOR_NULL",
+                             "ARRAY_ELEMENT", "PLUS_SYMBOL", "MINUS_SYMBOL",
+                             "ASTERISK_SYMBOL", "SLASH_SYMBOL", "PERCENT_SYMBOL",
+                             "LOGICAL_OR", "LOGICAL_AND", "LOGICAL_NOT",
+                             "INT_DIV", "BITAND", "BITOR", "BITXOR", "BITNOT",
+                             "BIT_SHIFT_LEFT", "BIT_SHIFT_RIGHT", "BIT_SHIFT_RIGHT_LOGICAL",
+                             "ARROW", "AT", "INTEGER_VALUE", "DECIMAL_VALUE",
+                             "DOUBLE_VALUE", "SINGLE_QUOTED_TEXT", "DOUBLE_QUOTED_TEXT",
+                             "BINARY_SINGLE_QUOTED_TEXT", "BINARY_DOUBLE_QUOTED_TEXT",
+                             "LETTER_IDENTIFIER", "DIGIT_IDENTIFIER", "BACKQUOTED_IDENTIFIER",
+                             "DOT_IDENTIFIER", "SIMPLE_COMMENT", "BRACKETED_COMMENT",
+                             "OPTIMIZER_HINT", "SEMICOLON", "DOTDOTDOT",
                              "WS", "ATTACHMENT", "CONCAT" ];
-    static ruleNames = [ "sqlStatements", "singleStatement", "emptyStatement", 
-                         "statement", "useDatabaseStatement", "useCatalogStatement", 
-                         "setCatalogStatement", "showDatabasesStatement", 
-                         "alterDbQuotaStatement", "createDbStatement", "dropDbStatement", 
-                         "showCreateDbStatement", "alterDatabaseRenameStatement", 
-                         "recoverDbStmt", "showDataStmt", "createTableStatement", 
-                         "columnDesc", "charsetName", "defaultDesc", "generatedColumnDesc", 
-                         "indexDesc", "engineDesc", "charsetDesc", "collateDesc", 
-                         "keyDesc", "orderByDesc", "columnNullable", "typeWithNullable", 
-                         "aggStateDesc", "aggDesc", "rollupDesc", "rollupItem", 
-                         "dupKeys", "fromRollup", "orReplace", "ifNotExists", 
-                         "createTableAsSelectStatement", "dropTableStatement", 
-                         "cleanTemporaryTableStatement", "alterTableStatement", 
-                         "createIndexStatement", "dropIndexStatement", "indexType", 
-                         "showTableStatement", "showTemporaryTablesStatement", 
-                         "showCreateTableStatement", "showColumnStatement", 
-                         "showTableStatusStatement", "refreshTableStatement", 
-                         "showAlterStatement", "descTableStatement", "createTableLikeStatement", 
-                         "showIndexStatement", "recoverTableStatement", 
-                         "truncateTableStatement", "cancelAlterTableStatement", 
-                         "showPartitionsStatement", "recoverPartitionStatement", 
-                         "createViewStatement", "alterViewStatement", "dropViewStatement", 
-                         "columnNameWithComment", "submitTaskStatement", 
-                         "taskClause", "dropTaskStatement", "taskScheduleDesc", 
-                         "createMaterializedViewStatement", "mvPartitionExprs", 
-                         "materializedViewDesc", "showMaterializedViewsStatement", 
-                         "dropMaterializedViewStatement", "alterMaterializedViewStatement", 
-                         "refreshMaterializedViewStatement", "cancelRefreshMaterializedViewStatement", 
-                         "adminSetConfigStatement", "adminSetReplicaStatusStatement", 
-                         "adminShowConfigStatement", "adminShowReplicaDistributionStatement", 
-                         "adminShowReplicaStatusStatement", "adminRepairTableStatement", 
-                         "adminCancelRepairTableStatement", "adminCheckTabletsStatement", 
-                         "adminSetPartitionVersion", "killStatement", "syncStatement", 
-                         "adminSetAutomatedSnapshotOnStatement", "adminSetAutomatedSnapshotOffStatement", 
-                         "alterSystemStatement", "cancelAlterSystemStatement", 
-                         "showComputeNodesStatement", "createExternalCatalogStatement", 
-                         "showCreateExternalCatalogStatement", "dropExternalCatalogStatement", 
-                         "showCatalogsStatement", "alterCatalogStatement", 
-                         "createStorageVolumeStatement", "typeDesc", "locationsDesc", 
-                         "showStorageVolumesStatement", "dropStorageVolumeStatement", 
-                         "alterStorageVolumeStatement", "alterStorageVolumeClause", 
-                         "modifyStorageVolumePropertiesClause", "modifyStorageVolumeCommentClause", 
-                         "descStorageVolumeStatement", "setDefaultStorageVolumeStatement", 
-                         "updateFailPointStatusStatement", "showFailPointStatement", 
-                         "createDictionaryStatement", "dropDictionaryStatement", 
-                         "refreshDictionaryStatement", "showDictionaryStatement", 
-                         "cancelRefreshDictionaryStatement", "dictionaryColumnDesc", 
-                         "dictionaryName", "alterClause", "addFrontendClause", 
-                         "dropFrontendClause", "modifyFrontendHostClause", 
-                         "addBackendClause", "dropBackendClause", "decommissionBackendClause", 
-                         "modifyBackendClause", "addComputeNodeClause", 
-                         "dropComputeNodeClause", "modifyBrokerClause", 
-                         "alterLoadErrorUrlClause", "createImageClause", 
-                         "cleanTabletSchedQClause", "decommissionDiskClause", 
-                         "cancelDecommissionDiskClause", "disableDiskClause", 
-                         "cancelDisableDiskClause", "createIndexClause", 
-                         "dropIndexClause", "tableRenameClause", "swapTableClause", 
-                         "modifyPropertiesClause", "modifyCommentClause", 
-                         "optimizeClause", "addColumnClause", "addColumnsClause", 
-                         "dropColumnClause", "modifyColumnClause", "columnRenameClause", 
-                         "reorderColumnsClause", "rollupRenameClause", "compactionClause", 
-                         "subfieldName", "nestedFieldName", "addFieldClause", 
-                         "dropFieldClause", "createOrReplaceTagClause", 
-                         "createOrReplaceBranchClause", "dropBranchClause", 
-                         "dropTagClause", "tableOperationClause", "tagOptions", 
-                         "branchOptions", "snapshotRetention", "refRetain", 
-                         "maxSnapshotAge", "minSnapshotsToKeep", "snapshotId", 
-                         "timeUnit", "integer_list", "dropPersistentIndexClause", 
-                         "addPartitionClause", "dropPartitionClause", "truncatePartitionClause", 
-                         "modifyPartitionClause", "replacePartitionClause", 
-                         "partitionRenameClause", "insertStatement", "insertLabelOrColumnAliases", 
-                         "columnAliasesOrByName", "updateStatement", "deleteStatement", 
-                         "createRoutineLoadStatement", "alterRoutineLoadStatement", 
-                         "dataSource", "loadProperties", "colSeparatorProperty", 
-                         "rowDelimiterProperty", "importColumns", "columnProperties", 
-                         "jobProperties", "dataSourceProperties", "stopRoutineLoadStatement", 
-                         "resumeRoutineLoadStatement", "pauseRoutineLoadStatement", 
-                         "showRoutineLoadStatement", "showRoutineLoadTaskStatement", 
-                         "showCreateRoutineLoadStatement", "showStreamLoadStatement", 
-                         "analyzeStatement", "analyzeColumnClause", "dropStatsStatement", 
-                         "histogramStatement", "analyzeHistogramStatement", 
-                         "dropHistogramStatement", "createAnalyzeStatement", 
-                         "dropAnalyzeJobStatement", "showAnalyzeStatement", 
-                         "showStatsMetaStatement", "showHistogramMetaStatement", 
-                         "killAnalyzeStatement", "analyzeProfileStatement", 
-                         "createBaselinePlanStatement", "dropBaselinePlanStatement", 
-                         "showBaselinePlanStatement", "createResourceGroupStatement", 
-                         "dropResourceGroupStatement", "alterResourceGroupStatement", 
-                         "showResourceGroupStatement", "showResourceGroupUsageStatement", 
-                         "createResourceStatement", "alterResourceStatement", 
-                         "dropResourceStatement", "showResourceStatement", 
-                         "classifier", "showFunctionsStatement", "dropFunctionStatement", 
-                         "createFunctionStatement", "inlineFunction", "typeList", 
-                         "loadStatement", "labelName", "dataDescList", "dataDesc", 
-                         "formatProps", "brokerDesc", "resourceDesc", "showLoadStatement", 
-                         "showLoadWarningsStatement", "cancelLoadStatement", 
-                         "alterLoadStatement", "cancelCompactionStatement", 
-                         "showAuthorStatement", "showBackendsStatement", 
-                         "showBrokerStatement", "showCharsetStatement", 
-                         "showCollationStatement", "showDeleteStatement", 
-                         "showDynamicPartitionStatement", "showEventsStatement", 
-                         "showEnginesStatement", "showFrontendsStatement", 
-                         "showPluginsStatement", "showRepositoriesStatement", 
-                         "showOpenTableStatement", "showPrivilegesStatement", 
-                         "showProcedureStatement", "showProcStatement", 
-                         "showProcesslistStatement", "showProfilelistStatement", 
-                         "showRunningQueriesStatement", "showStatusStatement", 
-                         "showTabletStatement", "showTransactionStatement", 
-                         "showTriggersStatement", "showUserPropertyStatement", 
-                         "showVariablesStatement", "showWarningStatement", 
-                         "helpStatement", "createUserStatement", "dropUserStatement", 
-                         "alterUserStatement", "showUserStatement", "showAuthenticationStatement", 
-                         "executeAsStatement", "createRoleStatement", "alterRoleStatement", 
-                         "dropRoleStatement", "showRolesStatement", "grantRoleStatement", 
-                         "revokeRoleStatement", "setRoleStatement", "setDefaultRoleStatement", 
-                         "grantRevokeClause", "grantPrivilegeStatement", 
-                         "revokePrivilegeStatement", "showGrantsStatement", 
-                         "authOption", "privObjectName", "privObjectNameList", 
-                         "privFunctionObjectNameList", "privilegeTypeList", 
-                         "privilegeType", "privObjectType", "privObjectTypePlural", 
-                         "createSecurityIntegrationStatement", "alterSecurityIntegrationStatement", 
-                         "dropSecurityIntegrationStatement", "showSecurityIntegrationStatement", 
-                         "showCreateSecurityIntegrationStatement", "createGroupProviderStatement", 
-                         "dropGroupProviderStatement", "showGroupProvidersStatement", 
-                         "showCreateGroupProviderStatement", "backupStatement", 
-                         "cancelBackupStatement", "showBackupStatement", 
-                         "restoreStatement", "cancelRestoreStatement", "showRestoreStatement", 
-                         "showSnapshotStatement", "createRepositoryStatement", 
-                         "dropRepositoryStatement", "addSqlBlackListStatement", 
-                         "delSqlBlackListStatement", "showSqlBlackListStatement", 
-                         "showWhiteListStatement", "addBackendBlackListStatement", 
-                         "delBackendBlackListStatement", "showBackendBlackListStatement", 
-                         "dataCacheTarget", "createDataCacheRuleStatement", 
-                         "showDataCacheRulesStatement", "dropDataCacheRuleStatement", 
-                         "clearDataCacheRulesStatement", "dataCacheSelectStatement", 
-                         "exportStatement", "cancelExportStatement", "showExportStatement", 
-                         "installPluginStatement", "uninstallPluginStatement", 
-                         "createFileStatement", "dropFileStatement", "showSmallFilesStatement", 
-                         "createPipeStatement", "dropPipeStatement", "alterPipeClause", 
-                         "alterPipeStatement", "descPipeStatement", "showPipeStatement", 
-                         "setStatement", "setVar", "transaction_characteristics", 
-                         "transaction_access_mode", "isolation_level", "isolation_types", 
-                         "setExprOrDefault", "setUserPropertyStatement", 
-                         "roleList", "executeScriptStatement", "unsupportedStatement", 
-                         "lock_item", "lock_type", "alterPlanAdvisorAddStatement", 
-                         "truncatePlanAdvisorStatement", "alterPlanAdvisorDropStatement", 
-                         "showPlanAdvisorStatement", "createWarehouseStatement", 
-                         "dropWarehouseStatement", "suspendWarehouseStatement", 
-                         "resumeWarehouseStatement", "setWarehouseStatement", 
-                         "showWarehousesStatement", "showClustersStatement", 
-                         "showNodesStatement", "alterWarehouseStatement", 
-                         "beginStatement", "commitStatement", "rollbackStatement", 
-                         "translateStatement", "dialect", "translateSQL", 
-                         "queryStatement", "queryRelation", "withClause", 
-                         "queryNoWith", "queryPeriod", "periodType", "queryPrimary", 
-                         "subquery", "rowConstructor", "sortItem", "limitConstExpr", 
-                         "limitElement", "querySpecification", "fromClause", 
-                         "groupingElement", "groupingSet", "commonTableExpression", 
-                         "setQuantifier", "selectItem", "relations", "relation", 
-                         "relationPrimary", "pivotClause", "pivotAggregationExpression", 
-                         "pivotValue", "sampleClause", "argumentList", "namedArgumentList", 
-                         "namedArgument", "joinRelation", "crossOrInnerJoinType", 
-                         "outerAndSemiJoinType", "bracketHint", "hintMap", 
-                         "joinCriteria", "columnAliases", "partitionNames", 
-                         "keyPartitions", "tabletList", "prepareStatement", 
-                         "prepareSql", "executeStatement", "deallocateStatement", 
-                         "replicaList", "expressionsWithDefault", "expressionOrDefault", 
-                         "mapExpressionList", "mapExpression", "expressionSingleton", 
-                         "expression", "expressionList", "booleanExpression", 
-                         "predicate", "tupleInSubquery", "predicateOperations", 
-                         "valueExpression", "primaryExpression", "literalExpression", 
-                         "functionCall", "aggregationFunction", "userVariable", 
-                         "systemVariable", "columnReference", "informationFunctionExpression", 
-                         "specialDateTimeExpression", "specialFunctionExpression", 
-                         "windowFunction", "whenClause", "over", "ignoreNulls", 
-                         "windowFrame", "frameBound", "backupRestoreObjectDesc", 
-                         "tableDesc", "backupRestoreTableDesc", "explainDesc", 
-                         "optimizerTrace", "partitionExpr", "partitionDesc", 
-                         "listPartitionDesc", "singleItemListPartitionDesc", 
-                         "multiItemListPartitionDesc", "multiListPartitionValues", 
-                         "singleListPartitionValues", "listPartitionValues", 
-                         "listPartitionValue", "stringList", "literalExpressionList", 
-                         "rangePartitionDesc", "singleRangePartition", "multiRangePartition", 
-                         "partitionRangeDesc", "partitionKeyDesc", "partitionValueList", 
-                         "keyPartition", "partitionValue", "distributionClause", 
-                         "distributionDesc", "refreshSchemeDesc", "statusDesc", 
-                         "properties", "extProperties", "propertyList", 
-                         "userPropertyList", "property", "inlineProperties", 
-                         "inlineProperty", "varType", "comment", "outfile", 
-                         "fileFormat", "string", "binary", "comparisonOperator", 
-                         "booleanValue", "interval", "taskInterval", "taskUnitIdentifier", 
-                         "unitIdentifier", "unitBoundary", "type", "arrayType", 
-                         "mapType", "subfieldDesc", "subfieldDescs", "structType", 
-                         "typeParameter", "baseType", "decimalType", "qualifiedName", 
-                         "tableName", "writeBranch", "identifier", "identifierWithAlias", 
-                         "identifierWithAliasList", "identifierList", "identifierOrString", 
-                         "identifierOrStringList", "identifierOrStringOrStar", 
-                         "user", "assignment", "assignmentList", "number", 
+    static ruleNames = [ "sqlStatements", "singleStatement", "emptyStatement",
+                         "statement", "useDatabaseStatement", "useCatalogStatement",
+                         "setCatalogStatement", "showDatabasesStatement",
+                         "alterDbQuotaStatement", "createDbStatement", "dropDbStatement",
+                         "showCreateDbStatement", "alterDatabaseRenameStatement",
+                         "recoverDbStmt", "showDataStmt", "createTableStatement",
+                         "columnDesc", "charsetName", "defaultDesc", "generatedColumnDesc",
+                         "indexDesc", "engineDesc", "charsetDesc", "collateDesc",
+                         "keyDesc", "orderByDesc", "columnNullable", "typeWithNullable",
+                         "aggStateDesc", "aggDesc", "rollupDesc", "rollupItem",
+                         "dupKeys", "fromRollup", "orReplace", "ifNotExists",
+                         "createTableAsSelectStatement", "dropTableStatement",
+                         "cleanTemporaryTableStatement", "alterTableStatement",
+                         "createIndexStatement", "dropIndexStatement", "indexType",
+                         "showTableStatement", "showTemporaryTablesStatement",
+                         "showCreateTableStatement", "showColumnStatement",
+                         "showTableStatusStatement", "refreshTableStatement",
+                         "showAlterStatement", "descTableStatement", "createTableLikeStatement",
+                         "showIndexStatement", "recoverTableStatement",
+                         "truncateTableStatement", "cancelAlterTableStatement",
+                         "showPartitionsStatement", "recoverPartitionStatement",
+                         "createViewStatement", "alterViewStatement", "dropViewStatement",
+                         "columnNameWithComment", "submitTaskStatement",
+                         "taskClause", "dropTaskStatement", "taskScheduleDesc",
+                         "createMaterializedViewStatement", "mvPartitionExprs",
+                         "materializedViewDesc", "showMaterializedViewsStatement",
+                         "dropMaterializedViewStatement", "alterMaterializedViewStatement",
+                         "refreshMaterializedViewStatement", "cancelRefreshMaterializedViewStatement",
+                         "adminSetConfigStatement", "adminSetReplicaStatusStatement",
+                         "adminShowConfigStatement", "adminShowReplicaDistributionStatement",
+                         "adminShowReplicaStatusStatement", "adminRepairTableStatement",
+                         "adminCancelRepairTableStatement", "adminCheckTabletsStatement",
+                         "adminSetPartitionVersion", "killStatement", "syncStatement",
+                         "adminSetAutomatedSnapshotOnStatement", "adminSetAutomatedSnapshotOffStatement",
+                         "alterSystemStatement", "cancelAlterSystemStatement",
+                         "showComputeNodesStatement", "createExternalCatalogStatement",
+                         "showCreateExternalCatalogStatement", "dropExternalCatalogStatement",
+                         "showCatalogsStatement", "alterCatalogStatement",
+                         "createStorageVolumeStatement", "typeDesc", "locationsDesc",
+                         "showStorageVolumesStatement", "dropStorageVolumeStatement",
+                         "alterStorageVolumeStatement", "alterStorageVolumeClause",
+                         "modifyStorageVolumePropertiesClause", "modifyStorageVolumeCommentClause",
+                         "descStorageVolumeStatement", "setDefaultStorageVolumeStatement",
+                         "updateFailPointStatusStatement", "showFailPointStatement",
+                         "createDictionaryStatement", "dropDictionaryStatement",
+                         "refreshDictionaryStatement", "showDictionaryStatement",
+                         "cancelRefreshDictionaryStatement", "dictionaryColumnDesc",
+                         "dictionaryName", "alterClause", "addFrontendClause",
+                         "dropFrontendClause", "modifyFrontendHostClause",
+                         "addBackendClause", "dropBackendClause", "decommissionBackendClause",
+                         "modifyBackendClause", "addComputeNodeClause",
+                         "dropComputeNodeClause", "modifyBrokerClause",
+                         "alterLoadErrorUrlClause", "createImageClause",
+                         "cleanTabletSchedQClause", "decommissionDiskClause",
+                         "cancelDecommissionDiskClause", "disableDiskClause",
+                         "cancelDisableDiskClause", "createIndexClause",
+                         "dropIndexClause", "tableRenameClause", "swapTableClause",
+                         "modifyPropertiesClause", "modifyCommentClause",
+                         "optimizeClause", "addColumnClause", "addColumnsClause",
+                         "dropColumnClause", "modifyColumnClause", "columnRenameClause",
+                         "reorderColumnsClause", "rollupRenameClause", "compactionClause",
+                         "subfieldName", "nestedFieldName", "addFieldClause",
+                         "dropFieldClause", "createOrReplaceTagClause",
+                         "createOrReplaceBranchClause", "dropBranchClause",
+                         "dropTagClause", "tableOperationClause", "tagOptions",
+                         "branchOptions", "snapshotRetention", "refRetain",
+                         "maxSnapshotAge", "minSnapshotsToKeep", "snapshotId",
+                         "timeUnit", "integer_list", "dropPersistentIndexClause",
+                         "addPartitionClause", "dropPartitionClause", "truncatePartitionClause",
+                         "modifyPartitionClause", "replacePartitionClause",
+                         "partitionRenameClause", "insertStatement", "insertLabelOrColumnAliases",
+                         "columnAliasesOrByName", "updateStatement", "deleteStatement",
+                         "createRoutineLoadStatement", "alterRoutineLoadStatement",
+                         "dataSource", "loadProperties", "colSeparatorProperty",
+                         "rowDelimiterProperty", "importColumns", "columnProperties",
+                         "jobProperties", "dataSourceProperties", "stopRoutineLoadStatement",
+                         "resumeRoutineLoadStatement", "pauseRoutineLoadStatement",
+                         "showRoutineLoadStatement", "showRoutineLoadTaskStatement",
+                         "showCreateRoutineLoadStatement", "showStreamLoadStatement",
+                         "analyzeStatement", "analyzeColumnClause", "dropStatsStatement",
+                         "histogramStatement", "analyzeHistogramStatement",
+                         "dropHistogramStatement", "createAnalyzeStatement",
+                         "dropAnalyzeJobStatement", "showAnalyzeStatement",
+                         "showStatsMetaStatement", "showHistogramMetaStatement",
+                         "killAnalyzeStatement", "analyzeProfileStatement",
+                         "createBaselinePlanStatement", "dropBaselinePlanStatement",
+                         "showBaselinePlanStatement", "createResourceGroupStatement",
+                         "dropResourceGroupStatement", "alterResourceGroupStatement",
+                         "showResourceGroupStatement", "showResourceGroupUsageStatement",
+                         "createResourceStatement", "alterResourceStatement",
+                         "dropResourceStatement", "showResourceStatement",
+                         "classifier", "showFunctionsStatement", "dropFunctionStatement",
+                         "createFunctionStatement", "inlineFunction", "typeList",
+                         "loadStatement", "labelName", "dataDescList", "dataDesc",
+                         "formatProps", "brokerDesc", "resourceDesc", "showLoadStatement",
+                         "showLoadWarningsStatement", "cancelLoadStatement",
+                         "alterLoadStatement", "cancelCompactionStatement",
+                         "showAuthorStatement", "showBackendsStatement",
+                         "showBrokerStatement", "showCharsetStatement",
+                         "showCollationStatement", "showDeleteStatement",
+                         "showDynamicPartitionStatement", "showEventsStatement",
+                         "showEnginesStatement", "showFrontendsStatement",
+                         "showPluginsStatement", "showRepositoriesStatement",
+                         "showOpenTableStatement", "showPrivilegesStatement",
+                         "showProcedureStatement", "showProcStatement",
+                         "showProcesslistStatement", "showProfilelistStatement",
+                         "showRunningQueriesStatement", "showStatusStatement",
+                         "showTabletStatement", "showTransactionStatement",
+                         "showTriggersStatement", "showUserPropertyStatement",
+                         "showVariablesStatement", "showWarningStatement",
+                         "helpStatement", "createUserStatement", "dropUserStatement",
+                         "alterUserStatement", "showUserStatement", "showAuthenticationStatement",
+                         "executeAsStatement", "createRoleStatement", "alterRoleStatement",
+                         "dropRoleStatement", "showRolesStatement", "grantRoleStatement",
+                         "revokeRoleStatement", "setRoleStatement", "setDefaultRoleStatement",
+                         "grantRevokeClause", "grantPrivilegeStatement",
+                         "revokePrivilegeStatement", "showGrantsStatement",
+                         "authOption", "privObjectName", "privObjectNameList",
+                         "privFunctionObjectNameList", "privilegeTypeList",
+                         "privilegeType", "privObjectType", "privObjectTypePlural",
+                         "createSecurityIntegrationStatement", "alterSecurityIntegrationStatement",
+                         "dropSecurityIntegrationStatement", "showSecurityIntegrationStatement",
+                         "showCreateSecurityIntegrationStatement", "createGroupProviderStatement",
+                         "dropGroupProviderStatement", "showGroupProvidersStatement",
+                         "showCreateGroupProviderStatement", "backupStatement",
+                         "cancelBackupStatement", "showBackupStatement",
+                         "restoreStatement", "cancelRestoreStatement", "showRestoreStatement",
+                         "showSnapshotStatement", "createRepositoryStatement",
+                         "dropRepositoryStatement", "addSqlBlackListStatement",
+                         "delSqlBlackListStatement", "showSqlBlackListStatement",
+                         "showWhiteListStatement", "addBackendBlackListStatement",
+                         "delBackendBlackListStatement", "showBackendBlackListStatement",
+                         "dataCacheTarget", "createDataCacheRuleStatement",
+                         "showDataCacheRulesStatement", "dropDataCacheRuleStatement",
+                         "clearDataCacheRulesStatement", "dataCacheSelectStatement",
+                         "exportStatement", "cancelExportStatement", "showExportStatement",
+                         "installPluginStatement", "uninstallPluginStatement",
+                         "createFileStatement", "dropFileStatement", "showSmallFilesStatement",
+                         "createPipeStatement", "dropPipeStatement", "alterPipeClause",
+                         "alterPipeStatement", "descPipeStatement", "showPipeStatement",
+                         "setStatement", "setVar", "transaction_characteristics",
+                         "transaction_access_mode", "isolation_level", "isolation_types",
+                         "setExprOrDefault", "setUserPropertyStatement",
+                         "roleList", "executeScriptStatement", "unsupportedStatement",
+                         "lock_item", "lock_type", "alterPlanAdvisorAddStatement",
+                         "truncatePlanAdvisorStatement", "alterPlanAdvisorDropStatement",
+                         "showPlanAdvisorStatement", "createWarehouseStatement",
+                         "dropWarehouseStatement", "suspendWarehouseStatement",
+                         "resumeWarehouseStatement", "setWarehouseStatement",
+                         "showWarehousesStatement", "showClustersStatement",
+                         "showNodesStatement", "alterWarehouseStatement",
+                         "beginStatement", "commitStatement", "rollbackStatement",
+                         "translateStatement", "dialect", "translateSQL",
+                         "queryStatement", "queryRelation", "withClause",
+                         "queryNoWith", "queryPeriod", "periodType", "queryPrimary",
+                         "subquery", "rowConstructor", "sortItem", "limitConstExpr",
+                         "limitElement", "querySpecification", "fromClause",
+                         "groupingElement", "groupingSet", "commonTableExpression",
+                         "setQuantifier", "selectItem", "relations", "relation",
+                         "relationPrimary", "pivotClause", "pivotAggregationExpression",
+                         "pivotValue", "sampleClause", "argumentList", "namedArgumentList",
+                         "namedArgument", "joinRelation", "crossOrInnerJoinType",
+                         "outerAndSemiJoinType", "bracketHint", "hintMap",
+                         "joinCriteria", "columnAliases", "partitionNames",
+                         "keyPartitions", "tabletList", "prepareStatement",
+                         "prepareSql", "executeStatement", "deallocateStatement",
+                         "replicaList", "expressionsWithDefault", "expressionOrDefault",
+                         "mapExpressionList", "mapExpression", "expressionSingleton",
+                         "expression", "expressionList", "booleanExpression",
+                         "predicate", "tupleInSubquery", "predicateOperations",
+                         "valueExpression", "primaryExpression", "literalExpression",
+                         "functionCall", "aggregationFunction", "userVariable",
+                         "systemVariable", "columnReference", "informationFunctionExpression",
+                         "specialDateTimeExpression", "specialFunctionExpression",
+                         "windowFunction", "whenClause", "over", "ignoreNulls",
+                         "windowFrame", "frameBound", "backupRestoreObjectDesc",
+                         "tableDesc", "backupRestoreTableDesc", "explainDesc",
+                         "optimizerTrace", "partitionExpr", "partitionDesc",
+                         "listPartitionDesc", "singleItemListPartitionDesc",
+                         "multiItemListPartitionDesc", "multiListPartitionValues",
+                         "singleListPartitionValues", "listPartitionValues",
+                         "listPartitionValue", "stringList", "literalExpressionList",
+                         "rangePartitionDesc", "singleRangePartition", "multiRangePartition",
+                         "partitionRangeDesc", "partitionKeyDesc", "partitionValueList",
+                         "keyPartition", "partitionValue", "distributionClause",
+                         "distributionDesc", "refreshSchemeDesc", "statusDesc",
+                         "properties", "extProperties", "propertyList",
+                         "userPropertyList", "property", "inlineProperties",
+                         "inlineProperty", "varType", "comment", "outfile",
+                         "fileFormat", "string", "binary", "comparisonOperator",
+                         "booleanValue", "interval", "taskInterval", "taskUnitIdentifier",
+                         "unitIdentifier", "unitBoundary", "type", "arrayType",
+                         "mapType", "subfieldDesc", "subfieldDescs", "structType",
+                         "typeParameter", "baseType", "decimalType", "qualifiedName",
+                         "tableName", "writeBranch", "identifier", "identifierWithAlias",
+                         "identifierWithAliasList", "identifierList", "identifierOrString",
+                         "identifierOrStringList", "identifierOrStringOrStar",
+                         "user", "assignment", "assignmentList", "number",
                          "nonReserved" ];
 
     constructor(input) {
@@ -3638,10 +3638,13 @@ export default class StarRocksParser extends antlr4.Parser {
         this.literalNames = StarRocksParser.literalNames;
         this.symbolicNames = StarRocksParser.symbolicNames;
 
-        private long sqlMode = com.starrocks.qe.SqlModeHelper.MODE_DEFAULT;
-        public void setSqlMode(long newSqlMode) {
-            sqlMode = newSqlMode;
-        }
+        this.MODE_DEFAULT = 32;
+        this.MODE_PIPES_AS_CONCAT = 1 << 1;
+        this.sqlMode = this.MODE_DEFAULT;
+
+        this.setSqlMode = function(newSqlMode) {
+            this.sqlMode = newSqlMode;
+        ;
 
     }
 
@@ -3750,13 +3753,13 @@ export default class StarRocksParser extends antlr4.Parser {
 	    var _la = 0;
 	    try {
 	        this.enterOuterAlt(localctx, 1);
-	        this.state = 1025; 
+	        this.state = 1025;
 	        this._errHandler.sync(this);
 	        _la = this._input.LA(1);
 	        do {
 	            this.state = 1024;
 	            this.singleStatement();
-	            this.state = 1027; 
+	            this.state = 1027;
 	            this._errHandler.sync(this);
 	            _la = this._input.LA(1);
 	        } while((((_la) & ~0x1f) === 0 && ((1 << _la) & 1597444) !== 0) || ((((_la - 37)) & ~0x1f) === 0 && ((1 << (_la - 37)) & 2149056521) !== 0) || ((((_la - 69)) & ~0x1f) === 0 && ((1 << (_la - 69)) & 524545) !== 0) || ((((_la - 107)) & ~0x1f) === 0 && ((1 << (_la - 107)) & 4292865) !== 0) || ((((_la - 143)) & ~0x1f) === 0 && ((1 << (_la - 143)) & 13) !== 0) || ((((_la - 175)) & ~0x1f) === 0 && ((1 << (_la - 175)) & 3221225985) !== 0) || _la===225 || _la===239 || _la===302 || _la===317 || ((((_la - 342)) & ~0x1f) === 0 && ((1 << (_la - 342)) & 272826371) !== 0) || ((((_la - 386)) & ~0x1f) === 0 && ((1 << (_la - 386)) & 218694689) !== 0) || ((((_la - 435)) & ~0x1f) === 0 && ((1 << (_la - 435)) & 335941) !== 0) || ((((_la - 476)) & ~0x1f) === 0 && ((1 << (_la - 476)) & 49) !== 0) || _la===528);
@@ -5909,7 +5912,7 @@ export default class StarRocksParser extends antlr4.Parser {
 	                this.state = 1398;
 	                this.match(StarRocksParser.T__2);
 	                this.state = 1399;
-	                this.columnDesc(); 
+	                this.columnDesc();
 	            }
 	            this.state = 1404;
 	            this._errHandler.sync(this);
@@ -7282,7 +7285,7 @@ export default class StarRocksParser extends antlr4.Parser {
 	                        this.state = 1624;
 	                        this.match(StarRocksParser.T__2);
 	                        this.state = 1625;
-	                        this.identifier(); 
+	                        this.identifier();
 	                    }
 	                    this.state = 1630;
 	                    this._errHandler.sync(this);
@@ -9608,7 +9611,7 @@ export default class StarRocksParser extends antlr4.Parser {
 	                    this.state = 2152;
 	                    this.match(StarRocksParser.T__2);
 	                    this.state = 2153;
-	                    this.columnNameWithComment(); 
+	                    this.columnNameWithComment();
 	                }
 	                this.state = 2158;
 	                this._errHandler.sync(this);
@@ -12483,7 +12486,7 @@ export default class StarRocksParser extends antlr4.Parser {
 	                this.state = 2691;
 	                this.match(StarRocksParser.T__2);
 	                this.state = 2692;
-	                this.string(); 
+	                this.string();
 	            }
 	            this.state = 2697;
 	            this._errHandler.sync(this);
@@ -12538,7 +12541,7 @@ export default class StarRocksParser extends antlr4.Parser {
 	                this.state = 2706;
 	                this.match(StarRocksParser.T__2);
 	                this.state = 2707;
-	                this.string(); 
+	                this.string();
 	            }
 	            this.state = 2712;
 	            this._errHandler.sync(this);
@@ -12600,7 +12603,7 @@ export default class StarRocksParser extends antlr4.Parser {
 	                this.state = 2724;
 	                this.match(StarRocksParser.T__2);
 	                this.state = 2725;
-	                this.string(); 
+	                this.string();
 	            }
 	            this.state = 2730;
 	            this._errHandler.sync(this);
@@ -12700,7 +12703,7 @@ export default class StarRocksParser extends antlr4.Parser {
 	                this.state = 2750;
 	                this.match(StarRocksParser.T__2);
 	                this.state = 2751;
-	                this.string(); 
+	                this.string();
 	            }
 	            this.state = 2756;
 	            this._errHandler.sync(this);
@@ -12757,7 +12760,7 @@ export default class StarRocksParser extends antlr4.Parser {
 	                this.state = 2766;
 	                this.match(StarRocksParser.T__2);
 	                this.state = 2767;
-	                this.string(); 
+	                this.string();
 	            }
 	            this.state = 2772;
 	            this._errHandler.sync(this);
@@ -12818,7 +12821,7 @@ export default class StarRocksParser extends antlr4.Parser {
 	                    this.state = 2782;
 	                    this.match(StarRocksParser.T__2);
 	                    this.state = 2783;
-	                    this.string(); 
+	                    this.string();
 	                }
 	                this.state = 2788;
 	                this._errHandler.sync(this);
@@ -12845,7 +12848,7 @@ export default class StarRocksParser extends antlr4.Parser {
 	                    this.state = 2793;
 	                    this.match(StarRocksParser.T__2);
 	                    this.state = 2794;
-	                    this.string(); 
+	                    this.string();
 	                }
 	                this.state = 2799;
 	                this._errHandler.sync(this);
@@ -15469,7 +15472,7 @@ export default class StarRocksParser extends antlr4.Parser {
 	        while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
 	            if(_alt===1) {
 	                this.state = 3310;
-	                this.insertLabelOrColumnAliases(); 
+	                this.insertLabelOrColumnAliases();
 	            }
 	            this.state = 3315;
 	            this._errHandler.sync(this);
@@ -18276,7 +18279,7 @@ export default class StarRocksParser extends antlr4.Parser {
 	                this.state = 4021;
 	                this.match(StarRocksParser.T__2);
 	                this.state = 4022;
-	                this.type(); 
+	                this.type();
 	            }
 	            this.state = 4027;
 	            this._errHandler.sync(this);
@@ -27157,7 +27160,7 @@ export default class StarRocksParser extends antlr4.Parser {
 	    this.enterRule(localctx, 734, StarRocksParser.RULE_translateSQL);
 	    try {
 	        this.enterOuterAlt(localctx, 1);
-	        this.state = 5746; 
+	        this.state = 5746;
 	        this._errHandler.sync(this);
 	        var _alt = 1;
 	        do {
@@ -27169,7 +27172,7 @@ export default class StarRocksParser extends antlr4.Parser {
 	        	default:
 	        		throw new antlr4.error.NoViableAltException(this);
 	        	}
-	        	this.state = 5748; 
+	        	this.state = 5748;
 	        	this._errHandler.sync(this);
 	        	_alt = this._interp.adaptivePredict(this._input,630, this._ctx);
 	        } while ( _alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER );
@@ -27603,7 +27606,7 @@ export default class StarRocksParser extends antlr4.Parser {
 	                    localctx.right = this.queryPrimary(2);
 	                    break;
 
-	                } 
+	                }
 	            }
 	            this.state = 5845;
 	            this._errHandler.sync(this);
@@ -27861,7 +27864,7 @@ export default class StarRocksParser extends antlr4.Parser {
 	                this.state = 5885;
 	                this.match(StarRocksParser.T__2);
 	                this.state = 5886;
-	                this.selectItem(); 
+	                this.selectItem();
 	            }
 	            this.state = 5891;
 	            this._errHandler.sync(this);
@@ -28635,7 +28638,7 @@ export default class StarRocksParser extends antlr4.Parser {
 	                }
 
 	                this.state = 5998;
-	                this.relation(); 
+	                this.relation();
 	            }
 	            this.state = 6003;
 	            this._errHandler.sync(this);
@@ -28677,7 +28680,7 @@ export default class StarRocksParser extends antlr4.Parser {
 	            while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
 	                if(_alt===1) {
 	                    this.state = 6005;
-	                    this.joinRelation(); 
+	                    this.joinRelation();
 	                }
 	                this.state = 6010;
 	                this._errHandler.sync(this);
@@ -32244,7 +32247,7 @@ export default class StarRocksParser extends antlr4.Parser {
 	                    localctx.right = this.expression(2);
 	                    break;
 
-	                } 
+	                }
 	            }
 	            this.state = 6446;
 	            this._errHandler.sync(this);
@@ -32282,7 +32285,7 @@ export default class StarRocksParser extends antlr4.Parser {
 	                this.state = 6448;
 	                this.match(StarRocksParser.T__2);
 	                this.state = 6449;
-	                this.expression(0); 
+	                this.expression(0);
 	            }
 	            this.state = 6454;
 	            this._errHandler.sync(this);
@@ -32389,7 +32392,7 @@ export default class StarRocksParser extends antlr4.Parser {
 	                    this.match(StarRocksParser.T__3);
 	                    break;
 
-	                } 
+	                }
 	            }
 	            this.state = 6478;
 	            this._errHandler.sync(this);
@@ -32467,7 +32470,7 @@ export default class StarRocksParser extends antlr4.Parser {
 	        this.match(StarRocksParser.T__1);
 	        this.state = 6487;
 	        this.expression(0);
-	        this.state = 6490; 
+	        this.state = 6490;
 	        this._errHandler.sync(this);
 	        _la = this._input.LA(1);
 	        do {
@@ -32475,7 +32478,7 @@ export default class StarRocksParser extends antlr4.Parser {
 	            this.match(StarRocksParser.T__2);
 	            this.state = 6489;
 	            this.expression(0);
-	            this.state = 6492; 
+	            this.state = 6492;
 	            this._errHandler.sync(this);
 	            _la = this._input.LA(1);
 	        } while(_la===3);
@@ -32786,7 +32789,7 @@ export default class StarRocksParser extends antlr4.Parser {
 	                    localctx.right = this.valueExpression(2);
 	                    break;
 
-	                } 
+	                }
 	            }
 	            this.state = 6565;
 	            this._errHandler.sync(this);
@@ -33000,13 +33003,13 @@ export default class StarRocksParser extends antlr4.Parser {
 	            this.match(StarRocksParser.CASE);
 	            this.state = 6611;
 	            localctx.caseExpr = this.expression(0);
-	            this.state = 6613; 
+	            this.state = 6613;
 	            this._errHandler.sync(this);
 	            _la = this._input.LA(1);
 	            do {
 	                this.state = 6612;
 	                this.whenClause();
-	                this.state = 6615; 
+	                this.state = 6615;
 	                this._errHandler.sync(this);
 	                _la = this._input.LA(1);
 	            } while(_la===473);
@@ -33030,13 +33033,13 @@ export default class StarRocksParser extends antlr4.Parser {
 	            _prevctx = localctx;
 	            this.state = 6623;
 	            this.match(StarRocksParser.CASE);
-	            this.state = 6625; 
+	            this.state = 6625;
 	            this._errHandler.sync(this);
 	            _la = this._input.LA(1);
 	            do {
 	                this.state = 6624;
 	                this.whenClause();
-	                this.state = 6627; 
+	                this.state = 6627;
 	                this._errHandler.sync(this);
 	                _la = this._input.LA(1);
 	            } while(_la===473);
@@ -33981,7 +33984,7 @@ export default class StarRocksParser extends antlr4.Parser {
 	                    this.string();
 	                    break;
 
-	                } 
+	                }
 	            }
 	            this.state = 6716;
 	            this._errHandler.sync(this);
@@ -36417,7 +36420,7 @@ export default class StarRocksParser extends antlr4.Parser {
 	                    this.state = 7455;
 	                    this.match(StarRocksParser.T__2);
 	                    this.state = 7456;
-	                    this.partitionExpr(); 
+	                    this.partitionExpr();
 	                }
 	                this.state = 7461;
 	                this._errHandler.sync(this);
@@ -39057,7 +39060,7 @@ export default class StarRocksParser extends antlr4.Parser {
 	                    break;
 	                default:
 	                    throw new antlr4.error.NoViableAltException(this);
-	                } 
+	                }
 	            }
 	            this.state = 7912;
 	            this._errHandler.sync(this);
@@ -53992,7 +53995,7 @@ class AnalyzeColumnClauseContext extends antlr4.ParserRuleContext {
     }
 
 
-	 
+
 		copyFrom(ctx) {
 			super.copyFrom(ctx);
 		}
@@ -58271,7 +58274,7 @@ class ShowAuthenticationStatementContext extends antlr4.ParserRuleContext {
     }
 
 
-	 
+
 		copyFrom(ctx) {
 			super.copyFrom(ctx);
 		}
@@ -58641,7 +58644,7 @@ class GrantRoleStatementContext extends antlr4.ParserRuleContext {
     }
 
 
-	 
+
 		copyFrom(ctx) {
 			super.copyFrom(ctx);
 		}
@@ -58752,7 +58755,7 @@ class RevokeRoleStatementContext extends antlr4.ParserRuleContext {
     }
 
 
-	 
+
 		copyFrom(ctx) {
 			super.copyFrom(ctx);
 		}
@@ -59032,7 +59035,7 @@ class GrantPrivilegeStatementContext extends antlr4.ParserRuleContext {
     }
 
 
-	 
+
 		copyFrom(ctx) {
 			super.copyFrom(ctx);
 		}
@@ -59491,7 +59494,7 @@ class RevokePrivilegeStatementContext extends antlr4.ParserRuleContext {
     }
 
 
-	 
+
 		copyFrom(ctx) {
 			super.copyFrom(ctx);
 		}
@@ -59913,7 +59916,7 @@ class AuthOptionContext extends antlr4.ParserRuleContext {
     }
 
 
-	 
+
 		copyFrom(ctx) {
 			super.copyFrom(ctx);
 		}
@@ -63184,7 +63187,7 @@ class SetVarContext extends antlr4.ParserRuleContext {
     }
 
 
-	 
+
 		copyFrom(ctx) {
 			super.copyFrom(ctx);
 		}
@@ -65246,7 +65249,7 @@ class QueryPrimaryContext extends antlr4.ParserRuleContext {
     }
 
 
-	 
+
 		copyFrom(ctx) {
 			super.copyFrom(ctx);
 		}
@@ -65706,7 +65709,7 @@ class FromClauseContext extends antlr4.ParserRuleContext {
     }
 
 
-	 
+
 		copyFrom(ctx) {
 			super.copyFrom(ctx);
 		}
@@ -65797,7 +65800,7 @@ class GroupingElementContext extends antlr4.ParserRuleContext {
     }
 
 
-	 
+
 		copyFrom(ctx) {
 			super.copyFrom(ctx);
 		}
@@ -66084,7 +66087,7 @@ class SelectItemContext extends antlr4.ParserRuleContext {
     }
 
 
-	 
+
 		copyFrom(ctx) {
 			super.copyFrom(ctx);
 		}
@@ -66279,7 +66282,7 @@ class RelationPrimaryContext extends antlr4.ParserRuleContext {
     }
 
 
-	 
+
 		copyFrom(ctx) {
 			super.copyFrom(ctx);
 		}
@@ -66923,7 +66926,7 @@ class NamedArgumentContext extends antlr4.ParserRuleContext {
     }
 
 
-	 
+
 		copyFrom(ctx) {
 			super.copyFrom(ctx);
 		}
@@ -67389,7 +67392,7 @@ class KeyPartitionsContext extends antlr4.ParserRuleContext {
     }
 
 
-	 
+
 		copyFrom(ctx) {
 			super.copyFrom(ctx);
 		}
@@ -67950,7 +67953,7 @@ class ExpressionContext extends antlr4.ParserRuleContext {
     }
 
 
-	 
+
 		copyFrom(ctx) {
 			super.copyFrom(ctx);
 		}
@@ -68133,7 +68136,7 @@ class BooleanExpressionContext extends antlr4.ParserRuleContext {
     }
 
 
-	 
+
 		copyFrom(ctx) {
 			super.copyFrom(ctx);
 		}
@@ -68398,7 +68401,7 @@ class PredicateOperationsContext extends antlr4.ParserRuleContext {
     }
 
 
-	 
+
 		copyFrom(ctx) {
 			super.copyFrom(ctx);
 			this.value = ctx.value;
@@ -68585,7 +68588,7 @@ class ValueExpressionContext extends antlr4.ParserRuleContext {
     }
 
 
-	 
+
 		copyFrom(ctx) {
 			super.copyFrom(ctx);
 		}
@@ -68726,7 +68729,7 @@ class PrimaryExpressionContext extends antlr4.ParserRuleContext {
     }
 
 
-	 
+
 		copyFrom(ctx) {
 			super.copyFrom(ctx);
 		}
@@ -69662,7 +69665,7 @@ class LiteralExpressionContext extends antlr4.ParserRuleContext {
     }
 
 
-	 
+
 		copyFrom(ctx) {
 			super.copyFrom(ctx);
 		}
@@ -69945,7 +69948,7 @@ class FunctionCallContext extends antlr4.ParserRuleContext {
     }
 
 
-	 
+
 		copyFrom(ctx) {
 			super.copyFrom(ctx);
 		}
@@ -71090,7 +71093,7 @@ class FrameBoundContext extends antlr4.ParserRuleContext {
     }
 
 
-	 
+
 		copyFrom(ctx) {
 			super.copyFrom(ctx);
 		}
@@ -74249,7 +74252,7 @@ class IdentifierContext extends antlr4.ParserRuleContext {
     }
 
 
-	 
+
 		copyFrom(ctx) {
 			super.copyFrom(ctx);
 		}
@@ -74616,7 +74619,7 @@ class UserContext extends antlr4.ParserRuleContext {
     }
 
 
-	 
+
 		copyFrom(ctx) {
 			super.copyFrom(ctx);
 		}
@@ -74830,7 +74833,7 @@ class NumberContext extends antlr4.ParserRuleContext {
     }
 
 
-	 
+
 		copyFrom(ctx) {
 			super.copyFrom(ctx);
 		}
@@ -76250,515 +76253,515 @@ class NonReservedContext extends antlr4.ParserRuleContext {
 
 
 
-StarRocksParser.SqlStatementsContext = SqlStatementsContext; 
-StarRocksParser.SingleStatementContext = SingleStatementContext; 
-StarRocksParser.EmptyStatementContext = EmptyStatementContext; 
-StarRocksParser.StatementContext = StatementContext; 
-StarRocksParser.UseDatabaseStatementContext = UseDatabaseStatementContext; 
-StarRocksParser.UseCatalogStatementContext = UseCatalogStatementContext; 
-StarRocksParser.SetCatalogStatementContext = SetCatalogStatementContext; 
-StarRocksParser.ShowDatabasesStatementContext = ShowDatabasesStatementContext; 
-StarRocksParser.AlterDbQuotaStatementContext = AlterDbQuotaStatementContext; 
-StarRocksParser.CreateDbStatementContext = CreateDbStatementContext; 
-StarRocksParser.DropDbStatementContext = DropDbStatementContext; 
-StarRocksParser.ShowCreateDbStatementContext = ShowCreateDbStatementContext; 
-StarRocksParser.AlterDatabaseRenameStatementContext = AlterDatabaseRenameStatementContext; 
-StarRocksParser.RecoverDbStmtContext = RecoverDbStmtContext; 
-StarRocksParser.ShowDataStmtContext = ShowDataStmtContext; 
-StarRocksParser.CreateTableStatementContext = CreateTableStatementContext; 
-StarRocksParser.ColumnDescContext = ColumnDescContext; 
-StarRocksParser.CharsetNameContext = CharsetNameContext; 
-StarRocksParser.DefaultDescContext = DefaultDescContext; 
-StarRocksParser.GeneratedColumnDescContext = GeneratedColumnDescContext; 
-StarRocksParser.IndexDescContext = IndexDescContext; 
-StarRocksParser.EngineDescContext = EngineDescContext; 
-StarRocksParser.CharsetDescContext = CharsetDescContext; 
-StarRocksParser.CollateDescContext = CollateDescContext; 
-StarRocksParser.KeyDescContext = KeyDescContext; 
-StarRocksParser.OrderByDescContext = OrderByDescContext; 
-StarRocksParser.ColumnNullableContext = ColumnNullableContext; 
-StarRocksParser.TypeWithNullableContext = TypeWithNullableContext; 
-StarRocksParser.AggStateDescContext = AggStateDescContext; 
-StarRocksParser.AggDescContext = AggDescContext; 
-StarRocksParser.RollupDescContext = RollupDescContext; 
-StarRocksParser.RollupItemContext = RollupItemContext; 
-StarRocksParser.DupKeysContext = DupKeysContext; 
-StarRocksParser.FromRollupContext = FromRollupContext; 
-StarRocksParser.OrReplaceContext = OrReplaceContext; 
-StarRocksParser.IfNotExistsContext = IfNotExistsContext; 
-StarRocksParser.CreateTableAsSelectStatementContext = CreateTableAsSelectStatementContext; 
-StarRocksParser.DropTableStatementContext = DropTableStatementContext; 
-StarRocksParser.CleanTemporaryTableStatementContext = CleanTemporaryTableStatementContext; 
-StarRocksParser.AlterTableStatementContext = AlterTableStatementContext; 
-StarRocksParser.CreateIndexStatementContext = CreateIndexStatementContext; 
-StarRocksParser.DropIndexStatementContext = DropIndexStatementContext; 
-StarRocksParser.IndexTypeContext = IndexTypeContext; 
-StarRocksParser.ShowTableStatementContext = ShowTableStatementContext; 
-StarRocksParser.ShowTemporaryTablesStatementContext = ShowTemporaryTablesStatementContext; 
-StarRocksParser.ShowCreateTableStatementContext = ShowCreateTableStatementContext; 
-StarRocksParser.ShowColumnStatementContext = ShowColumnStatementContext; 
-StarRocksParser.ShowTableStatusStatementContext = ShowTableStatusStatementContext; 
-StarRocksParser.RefreshTableStatementContext = RefreshTableStatementContext; 
-StarRocksParser.ShowAlterStatementContext = ShowAlterStatementContext; 
-StarRocksParser.DescTableStatementContext = DescTableStatementContext; 
-StarRocksParser.CreateTableLikeStatementContext = CreateTableLikeStatementContext; 
-StarRocksParser.ShowIndexStatementContext = ShowIndexStatementContext; 
-StarRocksParser.RecoverTableStatementContext = RecoverTableStatementContext; 
-StarRocksParser.TruncateTableStatementContext = TruncateTableStatementContext; 
-StarRocksParser.CancelAlterTableStatementContext = CancelAlterTableStatementContext; 
-StarRocksParser.ShowPartitionsStatementContext = ShowPartitionsStatementContext; 
-StarRocksParser.RecoverPartitionStatementContext = RecoverPartitionStatementContext; 
-StarRocksParser.CreateViewStatementContext = CreateViewStatementContext; 
-StarRocksParser.AlterViewStatementContext = AlterViewStatementContext; 
-StarRocksParser.DropViewStatementContext = DropViewStatementContext; 
-StarRocksParser.ColumnNameWithCommentContext = ColumnNameWithCommentContext; 
-StarRocksParser.SubmitTaskStatementContext = SubmitTaskStatementContext; 
-StarRocksParser.TaskClauseContext = TaskClauseContext; 
-StarRocksParser.DropTaskStatementContext = DropTaskStatementContext; 
-StarRocksParser.TaskScheduleDescContext = TaskScheduleDescContext; 
-StarRocksParser.CreateMaterializedViewStatementContext = CreateMaterializedViewStatementContext; 
-StarRocksParser.MvPartitionExprsContext = MvPartitionExprsContext; 
-StarRocksParser.MaterializedViewDescContext = MaterializedViewDescContext; 
-StarRocksParser.ShowMaterializedViewsStatementContext = ShowMaterializedViewsStatementContext; 
-StarRocksParser.DropMaterializedViewStatementContext = DropMaterializedViewStatementContext; 
-StarRocksParser.AlterMaterializedViewStatementContext = AlterMaterializedViewStatementContext; 
-StarRocksParser.RefreshMaterializedViewStatementContext = RefreshMaterializedViewStatementContext; 
-StarRocksParser.CancelRefreshMaterializedViewStatementContext = CancelRefreshMaterializedViewStatementContext; 
-StarRocksParser.AdminSetConfigStatementContext = AdminSetConfigStatementContext; 
-StarRocksParser.AdminSetReplicaStatusStatementContext = AdminSetReplicaStatusStatementContext; 
-StarRocksParser.AdminShowConfigStatementContext = AdminShowConfigStatementContext; 
-StarRocksParser.AdminShowReplicaDistributionStatementContext = AdminShowReplicaDistributionStatementContext; 
-StarRocksParser.AdminShowReplicaStatusStatementContext = AdminShowReplicaStatusStatementContext; 
-StarRocksParser.AdminRepairTableStatementContext = AdminRepairTableStatementContext; 
-StarRocksParser.AdminCancelRepairTableStatementContext = AdminCancelRepairTableStatementContext; 
-StarRocksParser.AdminCheckTabletsStatementContext = AdminCheckTabletsStatementContext; 
-StarRocksParser.AdminSetPartitionVersionContext = AdminSetPartitionVersionContext; 
-StarRocksParser.KillStatementContext = KillStatementContext; 
-StarRocksParser.SyncStatementContext = SyncStatementContext; 
-StarRocksParser.AdminSetAutomatedSnapshotOnStatementContext = AdminSetAutomatedSnapshotOnStatementContext; 
-StarRocksParser.AdminSetAutomatedSnapshotOffStatementContext = AdminSetAutomatedSnapshotOffStatementContext; 
-StarRocksParser.AlterSystemStatementContext = AlterSystemStatementContext; 
-StarRocksParser.CancelAlterSystemStatementContext = CancelAlterSystemStatementContext; 
-StarRocksParser.ShowComputeNodesStatementContext = ShowComputeNodesStatementContext; 
-StarRocksParser.CreateExternalCatalogStatementContext = CreateExternalCatalogStatementContext; 
-StarRocksParser.ShowCreateExternalCatalogStatementContext = ShowCreateExternalCatalogStatementContext; 
-StarRocksParser.DropExternalCatalogStatementContext = DropExternalCatalogStatementContext; 
-StarRocksParser.ShowCatalogsStatementContext = ShowCatalogsStatementContext; 
-StarRocksParser.AlterCatalogStatementContext = AlterCatalogStatementContext; 
-StarRocksParser.CreateStorageVolumeStatementContext = CreateStorageVolumeStatementContext; 
-StarRocksParser.TypeDescContext = TypeDescContext; 
-StarRocksParser.LocationsDescContext = LocationsDescContext; 
-StarRocksParser.ShowStorageVolumesStatementContext = ShowStorageVolumesStatementContext; 
-StarRocksParser.DropStorageVolumeStatementContext = DropStorageVolumeStatementContext; 
-StarRocksParser.AlterStorageVolumeStatementContext = AlterStorageVolumeStatementContext; 
-StarRocksParser.AlterStorageVolumeClauseContext = AlterStorageVolumeClauseContext; 
-StarRocksParser.ModifyStorageVolumePropertiesClauseContext = ModifyStorageVolumePropertiesClauseContext; 
-StarRocksParser.ModifyStorageVolumeCommentClauseContext = ModifyStorageVolumeCommentClauseContext; 
-StarRocksParser.DescStorageVolumeStatementContext = DescStorageVolumeStatementContext; 
-StarRocksParser.SetDefaultStorageVolumeStatementContext = SetDefaultStorageVolumeStatementContext; 
-StarRocksParser.UpdateFailPointStatusStatementContext = UpdateFailPointStatusStatementContext; 
-StarRocksParser.ShowFailPointStatementContext = ShowFailPointStatementContext; 
-StarRocksParser.CreateDictionaryStatementContext = CreateDictionaryStatementContext; 
-StarRocksParser.DropDictionaryStatementContext = DropDictionaryStatementContext; 
-StarRocksParser.RefreshDictionaryStatementContext = RefreshDictionaryStatementContext; 
-StarRocksParser.ShowDictionaryStatementContext = ShowDictionaryStatementContext; 
-StarRocksParser.CancelRefreshDictionaryStatementContext = CancelRefreshDictionaryStatementContext; 
-StarRocksParser.DictionaryColumnDescContext = DictionaryColumnDescContext; 
-StarRocksParser.DictionaryNameContext = DictionaryNameContext; 
-StarRocksParser.AlterClauseContext = AlterClauseContext; 
-StarRocksParser.AddFrontendClauseContext = AddFrontendClauseContext; 
-StarRocksParser.DropFrontendClauseContext = DropFrontendClauseContext; 
-StarRocksParser.ModifyFrontendHostClauseContext = ModifyFrontendHostClauseContext; 
-StarRocksParser.AddBackendClauseContext = AddBackendClauseContext; 
-StarRocksParser.DropBackendClauseContext = DropBackendClauseContext; 
-StarRocksParser.DecommissionBackendClauseContext = DecommissionBackendClauseContext; 
-StarRocksParser.ModifyBackendClauseContext = ModifyBackendClauseContext; 
-StarRocksParser.AddComputeNodeClauseContext = AddComputeNodeClauseContext; 
-StarRocksParser.DropComputeNodeClauseContext = DropComputeNodeClauseContext; 
-StarRocksParser.ModifyBrokerClauseContext = ModifyBrokerClauseContext; 
-StarRocksParser.AlterLoadErrorUrlClauseContext = AlterLoadErrorUrlClauseContext; 
-StarRocksParser.CreateImageClauseContext = CreateImageClauseContext; 
-StarRocksParser.CleanTabletSchedQClauseContext = CleanTabletSchedQClauseContext; 
-StarRocksParser.DecommissionDiskClauseContext = DecommissionDiskClauseContext; 
-StarRocksParser.CancelDecommissionDiskClauseContext = CancelDecommissionDiskClauseContext; 
-StarRocksParser.DisableDiskClauseContext = DisableDiskClauseContext; 
-StarRocksParser.CancelDisableDiskClauseContext = CancelDisableDiskClauseContext; 
-StarRocksParser.CreateIndexClauseContext = CreateIndexClauseContext; 
-StarRocksParser.DropIndexClauseContext = DropIndexClauseContext; 
-StarRocksParser.TableRenameClauseContext = TableRenameClauseContext; 
-StarRocksParser.SwapTableClauseContext = SwapTableClauseContext; 
-StarRocksParser.ModifyPropertiesClauseContext = ModifyPropertiesClauseContext; 
-StarRocksParser.ModifyCommentClauseContext = ModifyCommentClauseContext; 
-StarRocksParser.OptimizeClauseContext = OptimizeClauseContext; 
-StarRocksParser.AddColumnClauseContext = AddColumnClauseContext; 
-StarRocksParser.AddColumnsClauseContext = AddColumnsClauseContext; 
-StarRocksParser.DropColumnClauseContext = DropColumnClauseContext; 
-StarRocksParser.ModifyColumnClauseContext = ModifyColumnClauseContext; 
-StarRocksParser.ColumnRenameClauseContext = ColumnRenameClauseContext; 
-StarRocksParser.ReorderColumnsClauseContext = ReorderColumnsClauseContext; 
-StarRocksParser.RollupRenameClauseContext = RollupRenameClauseContext; 
-StarRocksParser.CompactionClauseContext = CompactionClauseContext; 
-StarRocksParser.SubfieldNameContext = SubfieldNameContext; 
-StarRocksParser.NestedFieldNameContext = NestedFieldNameContext; 
-StarRocksParser.AddFieldClauseContext = AddFieldClauseContext; 
-StarRocksParser.DropFieldClauseContext = DropFieldClauseContext; 
-StarRocksParser.CreateOrReplaceTagClauseContext = CreateOrReplaceTagClauseContext; 
-StarRocksParser.CreateOrReplaceBranchClauseContext = CreateOrReplaceBranchClauseContext; 
-StarRocksParser.DropBranchClauseContext = DropBranchClauseContext; 
-StarRocksParser.DropTagClauseContext = DropTagClauseContext; 
-StarRocksParser.TableOperationClauseContext = TableOperationClauseContext; 
-StarRocksParser.TagOptionsContext = TagOptionsContext; 
-StarRocksParser.BranchOptionsContext = BranchOptionsContext; 
-StarRocksParser.SnapshotRetentionContext = SnapshotRetentionContext; 
-StarRocksParser.RefRetainContext = RefRetainContext; 
-StarRocksParser.MaxSnapshotAgeContext = MaxSnapshotAgeContext; 
-StarRocksParser.MinSnapshotsToKeepContext = MinSnapshotsToKeepContext; 
-StarRocksParser.SnapshotIdContext = SnapshotIdContext; 
-StarRocksParser.TimeUnitContext = TimeUnitContext; 
-StarRocksParser.Integer_listContext = Integer_listContext; 
-StarRocksParser.DropPersistentIndexClauseContext = DropPersistentIndexClauseContext; 
-StarRocksParser.AddPartitionClauseContext = AddPartitionClauseContext; 
-StarRocksParser.DropPartitionClauseContext = DropPartitionClauseContext; 
-StarRocksParser.TruncatePartitionClauseContext = TruncatePartitionClauseContext; 
-StarRocksParser.ModifyPartitionClauseContext = ModifyPartitionClauseContext; 
-StarRocksParser.ReplacePartitionClauseContext = ReplacePartitionClauseContext; 
-StarRocksParser.PartitionRenameClauseContext = PartitionRenameClauseContext; 
-StarRocksParser.InsertStatementContext = InsertStatementContext; 
-StarRocksParser.InsertLabelOrColumnAliasesContext = InsertLabelOrColumnAliasesContext; 
-StarRocksParser.ColumnAliasesOrByNameContext = ColumnAliasesOrByNameContext; 
-StarRocksParser.UpdateStatementContext = UpdateStatementContext; 
-StarRocksParser.DeleteStatementContext = DeleteStatementContext; 
-StarRocksParser.CreateRoutineLoadStatementContext = CreateRoutineLoadStatementContext; 
-StarRocksParser.AlterRoutineLoadStatementContext = AlterRoutineLoadStatementContext; 
-StarRocksParser.DataSourceContext = DataSourceContext; 
-StarRocksParser.LoadPropertiesContext = LoadPropertiesContext; 
-StarRocksParser.ColSeparatorPropertyContext = ColSeparatorPropertyContext; 
-StarRocksParser.RowDelimiterPropertyContext = RowDelimiterPropertyContext; 
-StarRocksParser.ImportColumnsContext = ImportColumnsContext; 
-StarRocksParser.ColumnPropertiesContext = ColumnPropertiesContext; 
-StarRocksParser.JobPropertiesContext = JobPropertiesContext; 
-StarRocksParser.DataSourcePropertiesContext = DataSourcePropertiesContext; 
-StarRocksParser.StopRoutineLoadStatementContext = StopRoutineLoadStatementContext; 
-StarRocksParser.ResumeRoutineLoadStatementContext = ResumeRoutineLoadStatementContext; 
-StarRocksParser.PauseRoutineLoadStatementContext = PauseRoutineLoadStatementContext; 
-StarRocksParser.ShowRoutineLoadStatementContext = ShowRoutineLoadStatementContext; 
-StarRocksParser.ShowRoutineLoadTaskStatementContext = ShowRoutineLoadTaskStatementContext; 
-StarRocksParser.ShowCreateRoutineLoadStatementContext = ShowCreateRoutineLoadStatementContext; 
-StarRocksParser.ShowStreamLoadStatementContext = ShowStreamLoadStatementContext; 
-StarRocksParser.AnalyzeStatementContext = AnalyzeStatementContext; 
-StarRocksParser.AnalyzeColumnClauseContext = AnalyzeColumnClauseContext; 
-StarRocksParser.DropStatsStatementContext = DropStatsStatementContext; 
-StarRocksParser.HistogramStatementContext = HistogramStatementContext; 
-StarRocksParser.AnalyzeHistogramStatementContext = AnalyzeHistogramStatementContext; 
-StarRocksParser.DropHistogramStatementContext = DropHistogramStatementContext; 
-StarRocksParser.CreateAnalyzeStatementContext = CreateAnalyzeStatementContext; 
-StarRocksParser.DropAnalyzeJobStatementContext = DropAnalyzeJobStatementContext; 
-StarRocksParser.ShowAnalyzeStatementContext = ShowAnalyzeStatementContext; 
-StarRocksParser.ShowStatsMetaStatementContext = ShowStatsMetaStatementContext; 
-StarRocksParser.ShowHistogramMetaStatementContext = ShowHistogramMetaStatementContext; 
-StarRocksParser.KillAnalyzeStatementContext = KillAnalyzeStatementContext; 
-StarRocksParser.AnalyzeProfileStatementContext = AnalyzeProfileStatementContext; 
-StarRocksParser.CreateBaselinePlanStatementContext = CreateBaselinePlanStatementContext; 
-StarRocksParser.DropBaselinePlanStatementContext = DropBaselinePlanStatementContext; 
-StarRocksParser.ShowBaselinePlanStatementContext = ShowBaselinePlanStatementContext; 
-StarRocksParser.CreateResourceGroupStatementContext = CreateResourceGroupStatementContext; 
-StarRocksParser.DropResourceGroupStatementContext = DropResourceGroupStatementContext; 
-StarRocksParser.AlterResourceGroupStatementContext = AlterResourceGroupStatementContext; 
-StarRocksParser.ShowResourceGroupStatementContext = ShowResourceGroupStatementContext; 
-StarRocksParser.ShowResourceGroupUsageStatementContext = ShowResourceGroupUsageStatementContext; 
-StarRocksParser.CreateResourceStatementContext = CreateResourceStatementContext; 
-StarRocksParser.AlterResourceStatementContext = AlterResourceStatementContext; 
-StarRocksParser.DropResourceStatementContext = DropResourceStatementContext; 
-StarRocksParser.ShowResourceStatementContext = ShowResourceStatementContext; 
-StarRocksParser.ClassifierContext = ClassifierContext; 
-StarRocksParser.ShowFunctionsStatementContext = ShowFunctionsStatementContext; 
-StarRocksParser.DropFunctionStatementContext = DropFunctionStatementContext; 
-StarRocksParser.CreateFunctionStatementContext = CreateFunctionStatementContext; 
-StarRocksParser.InlineFunctionContext = InlineFunctionContext; 
-StarRocksParser.TypeListContext = TypeListContext; 
-StarRocksParser.LoadStatementContext = LoadStatementContext; 
-StarRocksParser.LabelNameContext = LabelNameContext; 
-StarRocksParser.DataDescListContext = DataDescListContext; 
-StarRocksParser.DataDescContext = DataDescContext; 
-StarRocksParser.FormatPropsContext = FormatPropsContext; 
-StarRocksParser.BrokerDescContext = BrokerDescContext; 
-StarRocksParser.ResourceDescContext = ResourceDescContext; 
-StarRocksParser.ShowLoadStatementContext = ShowLoadStatementContext; 
-StarRocksParser.ShowLoadWarningsStatementContext = ShowLoadWarningsStatementContext; 
-StarRocksParser.CancelLoadStatementContext = CancelLoadStatementContext; 
-StarRocksParser.AlterLoadStatementContext = AlterLoadStatementContext; 
-StarRocksParser.CancelCompactionStatementContext = CancelCompactionStatementContext; 
-StarRocksParser.ShowAuthorStatementContext = ShowAuthorStatementContext; 
-StarRocksParser.ShowBackendsStatementContext = ShowBackendsStatementContext; 
-StarRocksParser.ShowBrokerStatementContext = ShowBrokerStatementContext; 
-StarRocksParser.ShowCharsetStatementContext = ShowCharsetStatementContext; 
-StarRocksParser.ShowCollationStatementContext = ShowCollationStatementContext; 
-StarRocksParser.ShowDeleteStatementContext = ShowDeleteStatementContext; 
-StarRocksParser.ShowDynamicPartitionStatementContext = ShowDynamicPartitionStatementContext; 
-StarRocksParser.ShowEventsStatementContext = ShowEventsStatementContext; 
-StarRocksParser.ShowEnginesStatementContext = ShowEnginesStatementContext; 
-StarRocksParser.ShowFrontendsStatementContext = ShowFrontendsStatementContext; 
-StarRocksParser.ShowPluginsStatementContext = ShowPluginsStatementContext; 
-StarRocksParser.ShowRepositoriesStatementContext = ShowRepositoriesStatementContext; 
-StarRocksParser.ShowOpenTableStatementContext = ShowOpenTableStatementContext; 
-StarRocksParser.ShowPrivilegesStatementContext = ShowPrivilegesStatementContext; 
-StarRocksParser.ShowProcedureStatementContext = ShowProcedureStatementContext; 
-StarRocksParser.ShowProcStatementContext = ShowProcStatementContext; 
-StarRocksParser.ShowProcesslistStatementContext = ShowProcesslistStatementContext; 
-StarRocksParser.ShowProfilelistStatementContext = ShowProfilelistStatementContext; 
-StarRocksParser.ShowRunningQueriesStatementContext = ShowRunningQueriesStatementContext; 
-StarRocksParser.ShowStatusStatementContext = ShowStatusStatementContext; 
-StarRocksParser.ShowTabletStatementContext = ShowTabletStatementContext; 
-StarRocksParser.ShowTransactionStatementContext = ShowTransactionStatementContext; 
-StarRocksParser.ShowTriggersStatementContext = ShowTriggersStatementContext; 
-StarRocksParser.ShowUserPropertyStatementContext = ShowUserPropertyStatementContext; 
-StarRocksParser.ShowVariablesStatementContext = ShowVariablesStatementContext; 
-StarRocksParser.ShowWarningStatementContext = ShowWarningStatementContext; 
-StarRocksParser.HelpStatementContext = HelpStatementContext; 
-StarRocksParser.CreateUserStatementContext = CreateUserStatementContext; 
-StarRocksParser.DropUserStatementContext = DropUserStatementContext; 
-StarRocksParser.AlterUserStatementContext = AlterUserStatementContext; 
-StarRocksParser.ShowUserStatementContext = ShowUserStatementContext; 
-StarRocksParser.ShowAuthenticationStatementContext = ShowAuthenticationStatementContext; 
-StarRocksParser.ExecuteAsStatementContext = ExecuteAsStatementContext; 
-StarRocksParser.CreateRoleStatementContext = CreateRoleStatementContext; 
-StarRocksParser.AlterRoleStatementContext = AlterRoleStatementContext; 
-StarRocksParser.DropRoleStatementContext = DropRoleStatementContext; 
-StarRocksParser.ShowRolesStatementContext = ShowRolesStatementContext; 
-StarRocksParser.GrantRoleStatementContext = GrantRoleStatementContext; 
-StarRocksParser.RevokeRoleStatementContext = RevokeRoleStatementContext; 
-StarRocksParser.SetRoleStatementContext = SetRoleStatementContext; 
-StarRocksParser.SetDefaultRoleStatementContext = SetDefaultRoleStatementContext; 
-StarRocksParser.GrantRevokeClauseContext = GrantRevokeClauseContext; 
-StarRocksParser.GrantPrivilegeStatementContext = GrantPrivilegeStatementContext; 
-StarRocksParser.RevokePrivilegeStatementContext = RevokePrivilegeStatementContext; 
-StarRocksParser.ShowGrantsStatementContext = ShowGrantsStatementContext; 
-StarRocksParser.AuthOptionContext = AuthOptionContext; 
-StarRocksParser.PrivObjectNameContext = PrivObjectNameContext; 
-StarRocksParser.PrivObjectNameListContext = PrivObjectNameListContext; 
-StarRocksParser.PrivFunctionObjectNameListContext = PrivFunctionObjectNameListContext; 
-StarRocksParser.PrivilegeTypeListContext = PrivilegeTypeListContext; 
-StarRocksParser.PrivilegeTypeContext = PrivilegeTypeContext; 
-StarRocksParser.PrivObjectTypeContext = PrivObjectTypeContext; 
-StarRocksParser.PrivObjectTypePluralContext = PrivObjectTypePluralContext; 
-StarRocksParser.CreateSecurityIntegrationStatementContext = CreateSecurityIntegrationStatementContext; 
-StarRocksParser.AlterSecurityIntegrationStatementContext = AlterSecurityIntegrationStatementContext; 
-StarRocksParser.DropSecurityIntegrationStatementContext = DropSecurityIntegrationStatementContext; 
-StarRocksParser.ShowSecurityIntegrationStatementContext = ShowSecurityIntegrationStatementContext; 
-StarRocksParser.ShowCreateSecurityIntegrationStatementContext = ShowCreateSecurityIntegrationStatementContext; 
-StarRocksParser.CreateGroupProviderStatementContext = CreateGroupProviderStatementContext; 
-StarRocksParser.DropGroupProviderStatementContext = DropGroupProviderStatementContext; 
-StarRocksParser.ShowGroupProvidersStatementContext = ShowGroupProvidersStatementContext; 
-StarRocksParser.ShowCreateGroupProviderStatementContext = ShowCreateGroupProviderStatementContext; 
-StarRocksParser.BackupStatementContext = BackupStatementContext; 
-StarRocksParser.CancelBackupStatementContext = CancelBackupStatementContext; 
-StarRocksParser.ShowBackupStatementContext = ShowBackupStatementContext; 
-StarRocksParser.RestoreStatementContext = RestoreStatementContext; 
-StarRocksParser.CancelRestoreStatementContext = CancelRestoreStatementContext; 
-StarRocksParser.ShowRestoreStatementContext = ShowRestoreStatementContext; 
-StarRocksParser.ShowSnapshotStatementContext = ShowSnapshotStatementContext; 
-StarRocksParser.CreateRepositoryStatementContext = CreateRepositoryStatementContext; 
-StarRocksParser.DropRepositoryStatementContext = DropRepositoryStatementContext; 
-StarRocksParser.AddSqlBlackListStatementContext = AddSqlBlackListStatementContext; 
-StarRocksParser.DelSqlBlackListStatementContext = DelSqlBlackListStatementContext; 
-StarRocksParser.ShowSqlBlackListStatementContext = ShowSqlBlackListStatementContext; 
-StarRocksParser.ShowWhiteListStatementContext = ShowWhiteListStatementContext; 
-StarRocksParser.AddBackendBlackListStatementContext = AddBackendBlackListStatementContext; 
-StarRocksParser.DelBackendBlackListStatementContext = DelBackendBlackListStatementContext; 
-StarRocksParser.ShowBackendBlackListStatementContext = ShowBackendBlackListStatementContext; 
-StarRocksParser.DataCacheTargetContext = DataCacheTargetContext; 
-StarRocksParser.CreateDataCacheRuleStatementContext = CreateDataCacheRuleStatementContext; 
-StarRocksParser.ShowDataCacheRulesStatementContext = ShowDataCacheRulesStatementContext; 
-StarRocksParser.DropDataCacheRuleStatementContext = DropDataCacheRuleStatementContext; 
-StarRocksParser.ClearDataCacheRulesStatementContext = ClearDataCacheRulesStatementContext; 
-StarRocksParser.DataCacheSelectStatementContext = DataCacheSelectStatementContext; 
-StarRocksParser.ExportStatementContext = ExportStatementContext; 
-StarRocksParser.CancelExportStatementContext = CancelExportStatementContext; 
-StarRocksParser.ShowExportStatementContext = ShowExportStatementContext; 
-StarRocksParser.InstallPluginStatementContext = InstallPluginStatementContext; 
-StarRocksParser.UninstallPluginStatementContext = UninstallPluginStatementContext; 
-StarRocksParser.CreateFileStatementContext = CreateFileStatementContext; 
-StarRocksParser.DropFileStatementContext = DropFileStatementContext; 
-StarRocksParser.ShowSmallFilesStatementContext = ShowSmallFilesStatementContext; 
-StarRocksParser.CreatePipeStatementContext = CreatePipeStatementContext; 
-StarRocksParser.DropPipeStatementContext = DropPipeStatementContext; 
-StarRocksParser.AlterPipeClauseContext = AlterPipeClauseContext; 
-StarRocksParser.AlterPipeStatementContext = AlterPipeStatementContext; 
-StarRocksParser.DescPipeStatementContext = DescPipeStatementContext; 
-StarRocksParser.ShowPipeStatementContext = ShowPipeStatementContext; 
-StarRocksParser.SetStatementContext = SetStatementContext; 
-StarRocksParser.SetVarContext = SetVarContext; 
-StarRocksParser.Transaction_characteristicsContext = Transaction_characteristicsContext; 
-StarRocksParser.Transaction_access_modeContext = Transaction_access_modeContext; 
-StarRocksParser.Isolation_levelContext = Isolation_levelContext; 
-StarRocksParser.Isolation_typesContext = Isolation_typesContext; 
-StarRocksParser.SetExprOrDefaultContext = SetExprOrDefaultContext; 
-StarRocksParser.SetUserPropertyStatementContext = SetUserPropertyStatementContext; 
-StarRocksParser.RoleListContext = RoleListContext; 
-StarRocksParser.ExecuteScriptStatementContext = ExecuteScriptStatementContext; 
-StarRocksParser.UnsupportedStatementContext = UnsupportedStatementContext; 
-StarRocksParser.Lock_itemContext = Lock_itemContext; 
-StarRocksParser.Lock_typeContext = Lock_typeContext; 
-StarRocksParser.AlterPlanAdvisorAddStatementContext = AlterPlanAdvisorAddStatementContext; 
-StarRocksParser.TruncatePlanAdvisorStatementContext = TruncatePlanAdvisorStatementContext; 
-StarRocksParser.AlterPlanAdvisorDropStatementContext = AlterPlanAdvisorDropStatementContext; 
-StarRocksParser.ShowPlanAdvisorStatementContext = ShowPlanAdvisorStatementContext; 
-StarRocksParser.CreateWarehouseStatementContext = CreateWarehouseStatementContext; 
-StarRocksParser.DropWarehouseStatementContext = DropWarehouseStatementContext; 
-StarRocksParser.SuspendWarehouseStatementContext = SuspendWarehouseStatementContext; 
-StarRocksParser.ResumeWarehouseStatementContext = ResumeWarehouseStatementContext; 
-StarRocksParser.SetWarehouseStatementContext = SetWarehouseStatementContext; 
-StarRocksParser.ShowWarehousesStatementContext = ShowWarehousesStatementContext; 
-StarRocksParser.ShowClustersStatementContext = ShowClustersStatementContext; 
-StarRocksParser.ShowNodesStatementContext = ShowNodesStatementContext; 
-StarRocksParser.AlterWarehouseStatementContext = AlterWarehouseStatementContext; 
-StarRocksParser.BeginStatementContext = BeginStatementContext; 
-StarRocksParser.CommitStatementContext = CommitStatementContext; 
-StarRocksParser.RollbackStatementContext = RollbackStatementContext; 
-StarRocksParser.TranslateStatementContext = TranslateStatementContext; 
-StarRocksParser.DialectContext = DialectContext; 
-StarRocksParser.TranslateSQLContext = TranslateSQLContext; 
-StarRocksParser.QueryStatementContext = QueryStatementContext; 
-StarRocksParser.QueryRelationContext = QueryRelationContext; 
-StarRocksParser.WithClauseContext = WithClauseContext; 
-StarRocksParser.QueryNoWithContext = QueryNoWithContext; 
-StarRocksParser.QueryPeriodContext = QueryPeriodContext; 
-StarRocksParser.PeriodTypeContext = PeriodTypeContext; 
-StarRocksParser.QueryPrimaryContext = QueryPrimaryContext; 
-StarRocksParser.SubqueryContext = SubqueryContext; 
-StarRocksParser.RowConstructorContext = RowConstructorContext; 
-StarRocksParser.SortItemContext = SortItemContext; 
-StarRocksParser.LimitConstExprContext = LimitConstExprContext; 
-StarRocksParser.LimitElementContext = LimitElementContext; 
-StarRocksParser.QuerySpecificationContext = QuerySpecificationContext; 
-StarRocksParser.FromClauseContext = FromClauseContext; 
-StarRocksParser.GroupingElementContext = GroupingElementContext; 
-StarRocksParser.GroupingSetContext = GroupingSetContext; 
-StarRocksParser.CommonTableExpressionContext = CommonTableExpressionContext; 
-StarRocksParser.SetQuantifierContext = SetQuantifierContext; 
-StarRocksParser.SelectItemContext = SelectItemContext; 
-StarRocksParser.RelationsContext = RelationsContext; 
-StarRocksParser.RelationContext = RelationContext; 
-StarRocksParser.RelationPrimaryContext = RelationPrimaryContext; 
-StarRocksParser.PivotClauseContext = PivotClauseContext; 
-StarRocksParser.PivotAggregationExpressionContext = PivotAggregationExpressionContext; 
-StarRocksParser.PivotValueContext = PivotValueContext; 
-StarRocksParser.SampleClauseContext = SampleClauseContext; 
-StarRocksParser.ArgumentListContext = ArgumentListContext; 
-StarRocksParser.NamedArgumentListContext = NamedArgumentListContext; 
-StarRocksParser.NamedArgumentContext = NamedArgumentContext; 
-StarRocksParser.JoinRelationContext = JoinRelationContext; 
-StarRocksParser.CrossOrInnerJoinTypeContext = CrossOrInnerJoinTypeContext; 
-StarRocksParser.OuterAndSemiJoinTypeContext = OuterAndSemiJoinTypeContext; 
-StarRocksParser.BracketHintContext = BracketHintContext; 
-StarRocksParser.HintMapContext = HintMapContext; 
-StarRocksParser.JoinCriteriaContext = JoinCriteriaContext; 
-StarRocksParser.ColumnAliasesContext = ColumnAliasesContext; 
-StarRocksParser.PartitionNamesContext = PartitionNamesContext; 
-StarRocksParser.KeyPartitionsContext = KeyPartitionsContext; 
-StarRocksParser.TabletListContext = TabletListContext; 
-StarRocksParser.PrepareStatementContext = PrepareStatementContext; 
-StarRocksParser.PrepareSqlContext = PrepareSqlContext; 
-StarRocksParser.ExecuteStatementContext = ExecuteStatementContext; 
-StarRocksParser.DeallocateStatementContext = DeallocateStatementContext; 
-StarRocksParser.ReplicaListContext = ReplicaListContext; 
-StarRocksParser.ExpressionsWithDefaultContext = ExpressionsWithDefaultContext; 
-StarRocksParser.ExpressionOrDefaultContext = ExpressionOrDefaultContext; 
-StarRocksParser.MapExpressionListContext = MapExpressionListContext; 
-StarRocksParser.MapExpressionContext = MapExpressionContext; 
-StarRocksParser.ExpressionSingletonContext = ExpressionSingletonContext; 
-StarRocksParser.ExpressionContext = ExpressionContext; 
-StarRocksParser.ExpressionListContext = ExpressionListContext; 
-StarRocksParser.BooleanExpressionContext = BooleanExpressionContext; 
-StarRocksParser.PredicateContext = PredicateContext; 
-StarRocksParser.TupleInSubqueryContext = TupleInSubqueryContext; 
-StarRocksParser.PredicateOperationsContext = PredicateOperationsContext; 
-StarRocksParser.ValueExpressionContext = ValueExpressionContext; 
-StarRocksParser.PrimaryExpressionContext = PrimaryExpressionContext; 
-StarRocksParser.LiteralExpressionContext = LiteralExpressionContext; 
-StarRocksParser.FunctionCallContext = FunctionCallContext; 
-StarRocksParser.AggregationFunctionContext = AggregationFunctionContext; 
-StarRocksParser.UserVariableContext = UserVariableContext; 
-StarRocksParser.SystemVariableContext = SystemVariableContext; 
-StarRocksParser.ColumnReferenceContext = ColumnReferenceContext; 
-StarRocksParser.InformationFunctionExpressionContext = InformationFunctionExpressionContext; 
-StarRocksParser.SpecialDateTimeExpressionContext = SpecialDateTimeExpressionContext; 
-StarRocksParser.SpecialFunctionExpressionContext = SpecialFunctionExpressionContext; 
-StarRocksParser.WindowFunctionContext = WindowFunctionContext; 
-StarRocksParser.WhenClauseContext = WhenClauseContext; 
-StarRocksParser.OverContext = OverContext; 
-StarRocksParser.IgnoreNullsContext = IgnoreNullsContext; 
-StarRocksParser.WindowFrameContext = WindowFrameContext; 
-StarRocksParser.FrameBoundContext = FrameBoundContext; 
-StarRocksParser.BackupRestoreObjectDescContext = BackupRestoreObjectDescContext; 
-StarRocksParser.TableDescContext = TableDescContext; 
-StarRocksParser.BackupRestoreTableDescContext = BackupRestoreTableDescContext; 
-StarRocksParser.ExplainDescContext = ExplainDescContext; 
-StarRocksParser.OptimizerTraceContext = OptimizerTraceContext; 
-StarRocksParser.PartitionExprContext = PartitionExprContext; 
-StarRocksParser.PartitionDescContext = PartitionDescContext; 
-StarRocksParser.ListPartitionDescContext = ListPartitionDescContext; 
-StarRocksParser.SingleItemListPartitionDescContext = SingleItemListPartitionDescContext; 
-StarRocksParser.MultiItemListPartitionDescContext = MultiItemListPartitionDescContext; 
-StarRocksParser.MultiListPartitionValuesContext = MultiListPartitionValuesContext; 
-StarRocksParser.SingleListPartitionValuesContext = SingleListPartitionValuesContext; 
-StarRocksParser.ListPartitionValuesContext = ListPartitionValuesContext; 
-StarRocksParser.ListPartitionValueContext = ListPartitionValueContext; 
-StarRocksParser.StringListContext = StringListContext; 
-StarRocksParser.LiteralExpressionListContext = LiteralExpressionListContext; 
-StarRocksParser.RangePartitionDescContext = RangePartitionDescContext; 
-StarRocksParser.SingleRangePartitionContext = SingleRangePartitionContext; 
-StarRocksParser.MultiRangePartitionContext = MultiRangePartitionContext; 
-StarRocksParser.PartitionRangeDescContext = PartitionRangeDescContext; 
-StarRocksParser.PartitionKeyDescContext = PartitionKeyDescContext; 
-StarRocksParser.PartitionValueListContext = PartitionValueListContext; 
-StarRocksParser.KeyPartitionContext = KeyPartitionContext; 
-StarRocksParser.PartitionValueContext = PartitionValueContext; 
-StarRocksParser.DistributionClauseContext = DistributionClauseContext; 
-StarRocksParser.DistributionDescContext = DistributionDescContext; 
-StarRocksParser.RefreshSchemeDescContext = RefreshSchemeDescContext; 
-StarRocksParser.StatusDescContext = StatusDescContext; 
-StarRocksParser.PropertiesContext = PropertiesContext; 
-StarRocksParser.ExtPropertiesContext = ExtPropertiesContext; 
-StarRocksParser.PropertyListContext = PropertyListContext; 
-StarRocksParser.UserPropertyListContext = UserPropertyListContext; 
-StarRocksParser.PropertyContext = PropertyContext; 
-StarRocksParser.InlinePropertiesContext = InlinePropertiesContext; 
-StarRocksParser.InlinePropertyContext = InlinePropertyContext; 
-StarRocksParser.VarTypeContext = VarTypeContext; 
-StarRocksParser.CommentContext = CommentContext; 
-StarRocksParser.OutfileContext = OutfileContext; 
-StarRocksParser.FileFormatContext = FileFormatContext; 
-StarRocksParser.StringContext = StringContext; 
-StarRocksParser.BinaryContext = BinaryContext; 
-StarRocksParser.ComparisonOperatorContext = ComparisonOperatorContext; 
-StarRocksParser.BooleanValueContext = BooleanValueContext; 
-StarRocksParser.IntervalContext = IntervalContext; 
-StarRocksParser.TaskIntervalContext = TaskIntervalContext; 
-StarRocksParser.TaskUnitIdentifierContext = TaskUnitIdentifierContext; 
-StarRocksParser.UnitIdentifierContext = UnitIdentifierContext; 
-StarRocksParser.UnitBoundaryContext = UnitBoundaryContext; 
-StarRocksParser.TypeContext = TypeContext; 
-StarRocksParser.ArrayTypeContext = ArrayTypeContext; 
-StarRocksParser.MapTypeContext = MapTypeContext; 
-StarRocksParser.SubfieldDescContext = SubfieldDescContext; 
-StarRocksParser.SubfieldDescsContext = SubfieldDescsContext; 
-StarRocksParser.StructTypeContext = StructTypeContext; 
-StarRocksParser.TypeParameterContext = TypeParameterContext; 
-StarRocksParser.BaseTypeContext = BaseTypeContext; 
-StarRocksParser.DecimalTypeContext = DecimalTypeContext; 
-StarRocksParser.QualifiedNameContext = QualifiedNameContext; 
-StarRocksParser.TableNameContext = TableNameContext; 
-StarRocksParser.WriteBranchContext = WriteBranchContext; 
-StarRocksParser.IdentifierContext = IdentifierContext; 
-StarRocksParser.IdentifierWithAliasContext = IdentifierWithAliasContext; 
-StarRocksParser.IdentifierWithAliasListContext = IdentifierWithAliasListContext; 
-StarRocksParser.IdentifierListContext = IdentifierListContext; 
-StarRocksParser.IdentifierOrStringContext = IdentifierOrStringContext; 
-StarRocksParser.IdentifierOrStringListContext = IdentifierOrStringListContext; 
-StarRocksParser.IdentifierOrStringOrStarContext = IdentifierOrStringOrStarContext; 
-StarRocksParser.UserContext = UserContext; 
-StarRocksParser.AssignmentContext = AssignmentContext; 
-StarRocksParser.AssignmentListContext = AssignmentListContext; 
-StarRocksParser.NumberContext = NumberContext; 
-StarRocksParser.NonReservedContext = NonReservedContext; 
+StarRocksParser.SqlStatementsContext = SqlStatementsContext;
+StarRocksParser.SingleStatementContext = SingleStatementContext;
+StarRocksParser.EmptyStatementContext = EmptyStatementContext;
+StarRocksParser.StatementContext = StatementContext;
+StarRocksParser.UseDatabaseStatementContext = UseDatabaseStatementContext;
+StarRocksParser.UseCatalogStatementContext = UseCatalogStatementContext;
+StarRocksParser.SetCatalogStatementContext = SetCatalogStatementContext;
+StarRocksParser.ShowDatabasesStatementContext = ShowDatabasesStatementContext;
+StarRocksParser.AlterDbQuotaStatementContext = AlterDbQuotaStatementContext;
+StarRocksParser.CreateDbStatementContext = CreateDbStatementContext;
+StarRocksParser.DropDbStatementContext = DropDbStatementContext;
+StarRocksParser.ShowCreateDbStatementContext = ShowCreateDbStatementContext;
+StarRocksParser.AlterDatabaseRenameStatementContext = AlterDatabaseRenameStatementContext;
+StarRocksParser.RecoverDbStmtContext = RecoverDbStmtContext;
+StarRocksParser.ShowDataStmtContext = ShowDataStmtContext;
+StarRocksParser.CreateTableStatementContext = CreateTableStatementContext;
+StarRocksParser.ColumnDescContext = ColumnDescContext;
+StarRocksParser.CharsetNameContext = CharsetNameContext;
+StarRocksParser.DefaultDescContext = DefaultDescContext;
+StarRocksParser.GeneratedColumnDescContext = GeneratedColumnDescContext;
+StarRocksParser.IndexDescContext = IndexDescContext;
+StarRocksParser.EngineDescContext = EngineDescContext;
+StarRocksParser.CharsetDescContext = CharsetDescContext;
+StarRocksParser.CollateDescContext = CollateDescContext;
+StarRocksParser.KeyDescContext = KeyDescContext;
+StarRocksParser.OrderByDescContext = OrderByDescContext;
+StarRocksParser.ColumnNullableContext = ColumnNullableContext;
+StarRocksParser.TypeWithNullableContext = TypeWithNullableContext;
+StarRocksParser.AggStateDescContext = AggStateDescContext;
+StarRocksParser.AggDescContext = AggDescContext;
+StarRocksParser.RollupDescContext = RollupDescContext;
+StarRocksParser.RollupItemContext = RollupItemContext;
+StarRocksParser.DupKeysContext = DupKeysContext;
+StarRocksParser.FromRollupContext = FromRollupContext;
+StarRocksParser.OrReplaceContext = OrReplaceContext;
+StarRocksParser.IfNotExistsContext = IfNotExistsContext;
+StarRocksParser.CreateTableAsSelectStatementContext = CreateTableAsSelectStatementContext;
+StarRocksParser.DropTableStatementContext = DropTableStatementContext;
+StarRocksParser.CleanTemporaryTableStatementContext = CleanTemporaryTableStatementContext;
+StarRocksParser.AlterTableStatementContext = AlterTableStatementContext;
+StarRocksParser.CreateIndexStatementContext = CreateIndexStatementContext;
+StarRocksParser.DropIndexStatementContext = DropIndexStatementContext;
+StarRocksParser.IndexTypeContext = IndexTypeContext;
+StarRocksParser.ShowTableStatementContext = ShowTableStatementContext;
+StarRocksParser.ShowTemporaryTablesStatementContext = ShowTemporaryTablesStatementContext;
+StarRocksParser.ShowCreateTableStatementContext = ShowCreateTableStatementContext;
+StarRocksParser.ShowColumnStatementContext = ShowColumnStatementContext;
+StarRocksParser.ShowTableStatusStatementContext = ShowTableStatusStatementContext;
+StarRocksParser.RefreshTableStatementContext = RefreshTableStatementContext;
+StarRocksParser.ShowAlterStatementContext = ShowAlterStatementContext;
+StarRocksParser.DescTableStatementContext = DescTableStatementContext;
+StarRocksParser.CreateTableLikeStatementContext = CreateTableLikeStatementContext;
+StarRocksParser.ShowIndexStatementContext = ShowIndexStatementContext;
+StarRocksParser.RecoverTableStatementContext = RecoverTableStatementContext;
+StarRocksParser.TruncateTableStatementContext = TruncateTableStatementContext;
+StarRocksParser.CancelAlterTableStatementContext = CancelAlterTableStatementContext;
+StarRocksParser.ShowPartitionsStatementContext = ShowPartitionsStatementContext;
+StarRocksParser.RecoverPartitionStatementContext = RecoverPartitionStatementContext;
+StarRocksParser.CreateViewStatementContext = CreateViewStatementContext;
+StarRocksParser.AlterViewStatementContext = AlterViewStatementContext;
+StarRocksParser.DropViewStatementContext = DropViewStatementContext;
+StarRocksParser.ColumnNameWithCommentContext = ColumnNameWithCommentContext;
+StarRocksParser.SubmitTaskStatementContext = SubmitTaskStatementContext;
+StarRocksParser.TaskClauseContext = TaskClauseContext;
+StarRocksParser.DropTaskStatementContext = DropTaskStatementContext;
+StarRocksParser.TaskScheduleDescContext = TaskScheduleDescContext;
+StarRocksParser.CreateMaterializedViewStatementContext = CreateMaterializedViewStatementContext;
+StarRocksParser.MvPartitionExprsContext = MvPartitionExprsContext;
+StarRocksParser.MaterializedViewDescContext = MaterializedViewDescContext;
+StarRocksParser.ShowMaterializedViewsStatementContext = ShowMaterializedViewsStatementContext;
+StarRocksParser.DropMaterializedViewStatementContext = DropMaterializedViewStatementContext;
+StarRocksParser.AlterMaterializedViewStatementContext = AlterMaterializedViewStatementContext;
+StarRocksParser.RefreshMaterializedViewStatementContext = RefreshMaterializedViewStatementContext;
+StarRocksParser.CancelRefreshMaterializedViewStatementContext = CancelRefreshMaterializedViewStatementContext;
+StarRocksParser.AdminSetConfigStatementContext = AdminSetConfigStatementContext;
+StarRocksParser.AdminSetReplicaStatusStatementContext = AdminSetReplicaStatusStatementContext;
+StarRocksParser.AdminShowConfigStatementContext = AdminShowConfigStatementContext;
+StarRocksParser.AdminShowReplicaDistributionStatementContext = AdminShowReplicaDistributionStatementContext;
+StarRocksParser.AdminShowReplicaStatusStatementContext = AdminShowReplicaStatusStatementContext;
+StarRocksParser.AdminRepairTableStatementContext = AdminRepairTableStatementContext;
+StarRocksParser.AdminCancelRepairTableStatementContext = AdminCancelRepairTableStatementContext;
+StarRocksParser.AdminCheckTabletsStatementContext = AdminCheckTabletsStatementContext;
+StarRocksParser.AdminSetPartitionVersionContext = AdminSetPartitionVersionContext;
+StarRocksParser.KillStatementContext = KillStatementContext;
+StarRocksParser.SyncStatementContext = SyncStatementContext;
+StarRocksParser.AdminSetAutomatedSnapshotOnStatementContext = AdminSetAutomatedSnapshotOnStatementContext;
+StarRocksParser.AdminSetAutomatedSnapshotOffStatementContext = AdminSetAutomatedSnapshotOffStatementContext;
+StarRocksParser.AlterSystemStatementContext = AlterSystemStatementContext;
+StarRocksParser.CancelAlterSystemStatementContext = CancelAlterSystemStatementContext;
+StarRocksParser.ShowComputeNodesStatementContext = ShowComputeNodesStatementContext;
+StarRocksParser.CreateExternalCatalogStatementContext = CreateExternalCatalogStatementContext;
+StarRocksParser.ShowCreateExternalCatalogStatementContext = ShowCreateExternalCatalogStatementContext;
+StarRocksParser.DropExternalCatalogStatementContext = DropExternalCatalogStatementContext;
+StarRocksParser.ShowCatalogsStatementContext = ShowCatalogsStatementContext;
+StarRocksParser.AlterCatalogStatementContext = AlterCatalogStatementContext;
+StarRocksParser.CreateStorageVolumeStatementContext = CreateStorageVolumeStatementContext;
+StarRocksParser.TypeDescContext = TypeDescContext;
+StarRocksParser.LocationsDescContext = LocationsDescContext;
+StarRocksParser.ShowStorageVolumesStatementContext = ShowStorageVolumesStatementContext;
+StarRocksParser.DropStorageVolumeStatementContext = DropStorageVolumeStatementContext;
+StarRocksParser.AlterStorageVolumeStatementContext = AlterStorageVolumeStatementContext;
+StarRocksParser.AlterStorageVolumeClauseContext = AlterStorageVolumeClauseContext;
+StarRocksParser.ModifyStorageVolumePropertiesClauseContext = ModifyStorageVolumePropertiesClauseContext;
+StarRocksParser.ModifyStorageVolumeCommentClauseContext = ModifyStorageVolumeCommentClauseContext;
+StarRocksParser.DescStorageVolumeStatementContext = DescStorageVolumeStatementContext;
+StarRocksParser.SetDefaultStorageVolumeStatementContext = SetDefaultStorageVolumeStatementContext;
+StarRocksParser.UpdateFailPointStatusStatementContext = UpdateFailPointStatusStatementContext;
+StarRocksParser.ShowFailPointStatementContext = ShowFailPointStatementContext;
+StarRocksParser.CreateDictionaryStatementContext = CreateDictionaryStatementContext;
+StarRocksParser.DropDictionaryStatementContext = DropDictionaryStatementContext;
+StarRocksParser.RefreshDictionaryStatementContext = RefreshDictionaryStatementContext;
+StarRocksParser.ShowDictionaryStatementContext = ShowDictionaryStatementContext;
+StarRocksParser.CancelRefreshDictionaryStatementContext = CancelRefreshDictionaryStatementContext;
+StarRocksParser.DictionaryColumnDescContext = DictionaryColumnDescContext;
+StarRocksParser.DictionaryNameContext = DictionaryNameContext;
+StarRocksParser.AlterClauseContext = AlterClauseContext;
+StarRocksParser.AddFrontendClauseContext = AddFrontendClauseContext;
+StarRocksParser.DropFrontendClauseContext = DropFrontendClauseContext;
+StarRocksParser.ModifyFrontendHostClauseContext = ModifyFrontendHostClauseContext;
+StarRocksParser.AddBackendClauseContext = AddBackendClauseContext;
+StarRocksParser.DropBackendClauseContext = DropBackendClauseContext;
+StarRocksParser.DecommissionBackendClauseContext = DecommissionBackendClauseContext;
+StarRocksParser.ModifyBackendClauseContext = ModifyBackendClauseContext;
+StarRocksParser.AddComputeNodeClauseContext = AddComputeNodeClauseContext;
+StarRocksParser.DropComputeNodeClauseContext = DropComputeNodeClauseContext;
+StarRocksParser.ModifyBrokerClauseContext = ModifyBrokerClauseContext;
+StarRocksParser.AlterLoadErrorUrlClauseContext = AlterLoadErrorUrlClauseContext;
+StarRocksParser.CreateImageClauseContext = CreateImageClauseContext;
+StarRocksParser.CleanTabletSchedQClauseContext = CleanTabletSchedQClauseContext;
+StarRocksParser.DecommissionDiskClauseContext = DecommissionDiskClauseContext;
+StarRocksParser.CancelDecommissionDiskClauseContext = CancelDecommissionDiskClauseContext;
+StarRocksParser.DisableDiskClauseContext = DisableDiskClauseContext;
+StarRocksParser.CancelDisableDiskClauseContext = CancelDisableDiskClauseContext;
+StarRocksParser.CreateIndexClauseContext = CreateIndexClauseContext;
+StarRocksParser.DropIndexClauseContext = DropIndexClauseContext;
+StarRocksParser.TableRenameClauseContext = TableRenameClauseContext;
+StarRocksParser.SwapTableClauseContext = SwapTableClauseContext;
+StarRocksParser.ModifyPropertiesClauseContext = ModifyPropertiesClauseContext;
+StarRocksParser.ModifyCommentClauseContext = ModifyCommentClauseContext;
+StarRocksParser.OptimizeClauseContext = OptimizeClauseContext;
+StarRocksParser.AddColumnClauseContext = AddColumnClauseContext;
+StarRocksParser.AddColumnsClauseContext = AddColumnsClauseContext;
+StarRocksParser.DropColumnClauseContext = DropColumnClauseContext;
+StarRocksParser.ModifyColumnClauseContext = ModifyColumnClauseContext;
+StarRocksParser.ColumnRenameClauseContext = ColumnRenameClauseContext;
+StarRocksParser.ReorderColumnsClauseContext = ReorderColumnsClauseContext;
+StarRocksParser.RollupRenameClauseContext = RollupRenameClauseContext;
+StarRocksParser.CompactionClauseContext = CompactionClauseContext;
+StarRocksParser.SubfieldNameContext = SubfieldNameContext;
+StarRocksParser.NestedFieldNameContext = NestedFieldNameContext;
+StarRocksParser.AddFieldClauseContext = AddFieldClauseContext;
+StarRocksParser.DropFieldClauseContext = DropFieldClauseContext;
+StarRocksParser.CreateOrReplaceTagClauseContext = CreateOrReplaceTagClauseContext;
+StarRocksParser.CreateOrReplaceBranchClauseContext = CreateOrReplaceBranchClauseContext;
+StarRocksParser.DropBranchClauseContext = DropBranchClauseContext;
+StarRocksParser.DropTagClauseContext = DropTagClauseContext;
+StarRocksParser.TableOperationClauseContext = TableOperationClauseContext;
+StarRocksParser.TagOptionsContext = TagOptionsContext;
+StarRocksParser.BranchOptionsContext = BranchOptionsContext;
+StarRocksParser.SnapshotRetentionContext = SnapshotRetentionContext;
+StarRocksParser.RefRetainContext = RefRetainContext;
+StarRocksParser.MaxSnapshotAgeContext = MaxSnapshotAgeContext;
+StarRocksParser.MinSnapshotsToKeepContext = MinSnapshotsToKeepContext;
+StarRocksParser.SnapshotIdContext = SnapshotIdContext;
+StarRocksParser.TimeUnitContext = TimeUnitContext;
+StarRocksParser.Integer_listContext = Integer_listContext;
+StarRocksParser.DropPersistentIndexClauseContext = DropPersistentIndexClauseContext;
+StarRocksParser.AddPartitionClauseContext = AddPartitionClauseContext;
+StarRocksParser.DropPartitionClauseContext = DropPartitionClauseContext;
+StarRocksParser.TruncatePartitionClauseContext = TruncatePartitionClauseContext;
+StarRocksParser.ModifyPartitionClauseContext = ModifyPartitionClauseContext;
+StarRocksParser.ReplacePartitionClauseContext = ReplacePartitionClauseContext;
+StarRocksParser.PartitionRenameClauseContext = PartitionRenameClauseContext;
+StarRocksParser.InsertStatementContext = InsertStatementContext;
+StarRocksParser.InsertLabelOrColumnAliasesContext = InsertLabelOrColumnAliasesContext;
+StarRocksParser.ColumnAliasesOrByNameContext = ColumnAliasesOrByNameContext;
+StarRocksParser.UpdateStatementContext = UpdateStatementContext;
+StarRocksParser.DeleteStatementContext = DeleteStatementContext;
+StarRocksParser.CreateRoutineLoadStatementContext = CreateRoutineLoadStatementContext;
+StarRocksParser.AlterRoutineLoadStatementContext = AlterRoutineLoadStatementContext;
+StarRocksParser.DataSourceContext = DataSourceContext;
+StarRocksParser.LoadPropertiesContext = LoadPropertiesContext;
+StarRocksParser.ColSeparatorPropertyContext = ColSeparatorPropertyContext;
+StarRocksParser.RowDelimiterPropertyContext = RowDelimiterPropertyContext;
+StarRocksParser.ImportColumnsContext = ImportColumnsContext;
+StarRocksParser.ColumnPropertiesContext = ColumnPropertiesContext;
+StarRocksParser.JobPropertiesContext = JobPropertiesContext;
+StarRocksParser.DataSourcePropertiesContext = DataSourcePropertiesContext;
+StarRocksParser.StopRoutineLoadStatementContext = StopRoutineLoadStatementContext;
+StarRocksParser.ResumeRoutineLoadStatementContext = ResumeRoutineLoadStatementContext;
+StarRocksParser.PauseRoutineLoadStatementContext = PauseRoutineLoadStatementContext;
+StarRocksParser.ShowRoutineLoadStatementContext = ShowRoutineLoadStatementContext;
+StarRocksParser.ShowRoutineLoadTaskStatementContext = ShowRoutineLoadTaskStatementContext;
+StarRocksParser.ShowCreateRoutineLoadStatementContext = ShowCreateRoutineLoadStatementContext;
+StarRocksParser.ShowStreamLoadStatementContext = ShowStreamLoadStatementContext;
+StarRocksParser.AnalyzeStatementContext = AnalyzeStatementContext;
+StarRocksParser.AnalyzeColumnClauseContext = AnalyzeColumnClauseContext;
+StarRocksParser.DropStatsStatementContext = DropStatsStatementContext;
+StarRocksParser.HistogramStatementContext = HistogramStatementContext;
+StarRocksParser.AnalyzeHistogramStatementContext = AnalyzeHistogramStatementContext;
+StarRocksParser.DropHistogramStatementContext = DropHistogramStatementContext;
+StarRocksParser.CreateAnalyzeStatementContext = CreateAnalyzeStatementContext;
+StarRocksParser.DropAnalyzeJobStatementContext = DropAnalyzeJobStatementContext;
+StarRocksParser.ShowAnalyzeStatementContext = ShowAnalyzeStatementContext;
+StarRocksParser.ShowStatsMetaStatementContext = ShowStatsMetaStatementContext;
+StarRocksParser.ShowHistogramMetaStatementContext = ShowHistogramMetaStatementContext;
+StarRocksParser.KillAnalyzeStatementContext = KillAnalyzeStatementContext;
+StarRocksParser.AnalyzeProfileStatementContext = AnalyzeProfileStatementContext;
+StarRocksParser.CreateBaselinePlanStatementContext = CreateBaselinePlanStatementContext;
+StarRocksParser.DropBaselinePlanStatementContext = DropBaselinePlanStatementContext;
+StarRocksParser.ShowBaselinePlanStatementContext = ShowBaselinePlanStatementContext;
+StarRocksParser.CreateResourceGroupStatementContext = CreateResourceGroupStatementContext;
+StarRocksParser.DropResourceGroupStatementContext = DropResourceGroupStatementContext;
+StarRocksParser.AlterResourceGroupStatementContext = AlterResourceGroupStatementContext;
+StarRocksParser.ShowResourceGroupStatementContext = ShowResourceGroupStatementContext;
+StarRocksParser.ShowResourceGroupUsageStatementContext = ShowResourceGroupUsageStatementContext;
+StarRocksParser.CreateResourceStatementContext = CreateResourceStatementContext;
+StarRocksParser.AlterResourceStatementContext = AlterResourceStatementContext;
+StarRocksParser.DropResourceStatementContext = DropResourceStatementContext;
+StarRocksParser.ShowResourceStatementContext = ShowResourceStatementContext;
+StarRocksParser.ClassifierContext = ClassifierContext;
+StarRocksParser.ShowFunctionsStatementContext = ShowFunctionsStatementContext;
+StarRocksParser.DropFunctionStatementContext = DropFunctionStatementContext;
+StarRocksParser.CreateFunctionStatementContext = CreateFunctionStatementContext;
+StarRocksParser.InlineFunctionContext = InlineFunctionContext;
+StarRocksParser.TypeListContext = TypeListContext;
+StarRocksParser.LoadStatementContext = LoadStatementContext;
+StarRocksParser.LabelNameContext = LabelNameContext;
+StarRocksParser.DataDescListContext = DataDescListContext;
+StarRocksParser.DataDescContext = DataDescContext;
+StarRocksParser.FormatPropsContext = FormatPropsContext;
+StarRocksParser.BrokerDescContext = BrokerDescContext;
+StarRocksParser.ResourceDescContext = ResourceDescContext;
+StarRocksParser.ShowLoadStatementContext = ShowLoadStatementContext;
+StarRocksParser.ShowLoadWarningsStatementContext = ShowLoadWarningsStatementContext;
+StarRocksParser.CancelLoadStatementContext = CancelLoadStatementContext;
+StarRocksParser.AlterLoadStatementContext = AlterLoadStatementContext;
+StarRocksParser.CancelCompactionStatementContext = CancelCompactionStatementContext;
+StarRocksParser.ShowAuthorStatementContext = ShowAuthorStatementContext;
+StarRocksParser.ShowBackendsStatementContext = ShowBackendsStatementContext;
+StarRocksParser.ShowBrokerStatementContext = ShowBrokerStatementContext;
+StarRocksParser.ShowCharsetStatementContext = ShowCharsetStatementContext;
+StarRocksParser.ShowCollationStatementContext = ShowCollationStatementContext;
+StarRocksParser.ShowDeleteStatementContext = ShowDeleteStatementContext;
+StarRocksParser.ShowDynamicPartitionStatementContext = ShowDynamicPartitionStatementContext;
+StarRocksParser.ShowEventsStatementContext = ShowEventsStatementContext;
+StarRocksParser.ShowEnginesStatementContext = ShowEnginesStatementContext;
+StarRocksParser.ShowFrontendsStatementContext = ShowFrontendsStatementContext;
+StarRocksParser.ShowPluginsStatementContext = ShowPluginsStatementContext;
+StarRocksParser.ShowRepositoriesStatementContext = ShowRepositoriesStatementContext;
+StarRocksParser.ShowOpenTableStatementContext = ShowOpenTableStatementContext;
+StarRocksParser.ShowPrivilegesStatementContext = ShowPrivilegesStatementContext;
+StarRocksParser.ShowProcedureStatementContext = ShowProcedureStatementContext;
+StarRocksParser.ShowProcStatementContext = ShowProcStatementContext;
+StarRocksParser.ShowProcesslistStatementContext = ShowProcesslistStatementContext;
+StarRocksParser.ShowProfilelistStatementContext = ShowProfilelistStatementContext;
+StarRocksParser.ShowRunningQueriesStatementContext = ShowRunningQueriesStatementContext;
+StarRocksParser.ShowStatusStatementContext = ShowStatusStatementContext;
+StarRocksParser.ShowTabletStatementContext = ShowTabletStatementContext;
+StarRocksParser.ShowTransactionStatementContext = ShowTransactionStatementContext;
+StarRocksParser.ShowTriggersStatementContext = ShowTriggersStatementContext;
+StarRocksParser.ShowUserPropertyStatementContext = ShowUserPropertyStatementContext;
+StarRocksParser.ShowVariablesStatementContext = ShowVariablesStatementContext;
+StarRocksParser.ShowWarningStatementContext = ShowWarningStatementContext;
+StarRocksParser.HelpStatementContext = HelpStatementContext;
+StarRocksParser.CreateUserStatementContext = CreateUserStatementContext;
+StarRocksParser.DropUserStatementContext = DropUserStatementContext;
+StarRocksParser.AlterUserStatementContext = AlterUserStatementContext;
+StarRocksParser.ShowUserStatementContext = ShowUserStatementContext;
+StarRocksParser.ShowAuthenticationStatementContext = ShowAuthenticationStatementContext;
+StarRocksParser.ExecuteAsStatementContext = ExecuteAsStatementContext;
+StarRocksParser.CreateRoleStatementContext = CreateRoleStatementContext;
+StarRocksParser.AlterRoleStatementContext = AlterRoleStatementContext;
+StarRocksParser.DropRoleStatementContext = DropRoleStatementContext;
+StarRocksParser.ShowRolesStatementContext = ShowRolesStatementContext;
+StarRocksParser.GrantRoleStatementContext = GrantRoleStatementContext;
+StarRocksParser.RevokeRoleStatementContext = RevokeRoleStatementContext;
+StarRocksParser.SetRoleStatementContext = SetRoleStatementContext;
+StarRocksParser.SetDefaultRoleStatementContext = SetDefaultRoleStatementContext;
+StarRocksParser.GrantRevokeClauseContext = GrantRevokeClauseContext;
+StarRocksParser.GrantPrivilegeStatementContext = GrantPrivilegeStatementContext;
+StarRocksParser.RevokePrivilegeStatementContext = RevokePrivilegeStatementContext;
+StarRocksParser.ShowGrantsStatementContext = ShowGrantsStatementContext;
+StarRocksParser.AuthOptionContext = AuthOptionContext;
+StarRocksParser.PrivObjectNameContext = PrivObjectNameContext;
+StarRocksParser.PrivObjectNameListContext = PrivObjectNameListContext;
+StarRocksParser.PrivFunctionObjectNameListContext = PrivFunctionObjectNameListContext;
+StarRocksParser.PrivilegeTypeListContext = PrivilegeTypeListContext;
+StarRocksParser.PrivilegeTypeContext = PrivilegeTypeContext;
+StarRocksParser.PrivObjectTypeContext = PrivObjectTypeContext;
+StarRocksParser.PrivObjectTypePluralContext = PrivObjectTypePluralContext;
+StarRocksParser.CreateSecurityIntegrationStatementContext = CreateSecurityIntegrationStatementContext;
+StarRocksParser.AlterSecurityIntegrationStatementContext = AlterSecurityIntegrationStatementContext;
+StarRocksParser.DropSecurityIntegrationStatementContext = DropSecurityIntegrationStatementContext;
+StarRocksParser.ShowSecurityIntegrationStatementContext = ShowSecurityIntegrationStatementContext;
+StarRocksParser.ShowCreateSecurityIntegrationStatementContext = ShowCreateSecurityIntegrationStatementContext;
+StarRocksParser.CreateGroupProviderStatementContext = CreateGroupProviderStatementContext;
+StarRocksParser.DropGroupProviderStatementContext = DropGroupProviderStatementContext;
+StarRocksParser.ShowGroupProvidersStatementContext = ShowGroupProvidersStatementContext;
+StarRocksParser.ShowCreateGroupProviderStatementContext = ShowCreateGroupProviderStatementContext;
+StarRocksParser.BackupStatementContext = BackupStatementContext;
+StarRocksParser.CancelBackupStatementContext = CancelBackupStatementContext;
+StarRocksParser.ShowBackupStatementContext = ShowBackupStatementContext;
+StarRocksParser.RestoreStatementContext = RestoreStatementContext;
+StarRocksParser.CancelRestoreStatementContext = CancelRestoreStatementContext;
+StarRocksParser.ShowRestoreStatementContext = ShowRestoreStatementContext;
+StarRocksParser.ShowSnapshotStatementContext = ShowSnapshotStatementContext;
+StarRocksParser.CreateRepositoryStatementContext = CreateRepositoryStatementContext;
+StarRocksParser.DropRepositoryStatementContext = DropRepositoryStatementContext;
+StarRocksParser.AddSqlBlackListStatementContext = AddSqlBlackListStatementContext;
+StarRocksParser.DelSqlBlackListStatementContext = DelSqlBlackListStatementContext;
+StarRocksParser.ShowSqlBlackListStatementContext = ShowSqlBlackListStatementContext;
+StarRocksParser.ShowWhiteListStatementContext = ShowWhiteListStatementContext;
+StarRocksParser.AddBackendBlackListStatementContext = AddBackendBlackListStatementContext;
+StarRocksParser.DelBackendBlackListStatementContext = DelBackendBlackListStatementContext;
+StarRocksParser.ShowBackendBlackListStatementContext = ShowBackendBlackListStatementContext;
+StarRocksParser.DataCacheTargetContext = DataCacheTargetContext;
+StarRocksParser.CreateDataCacheRuleStatementContext = CreateDataCacheRuleStatementContext;
+StarRocksParser.ShowDataCacheRulesStatementContext = ShowDataCacheRulesStatementContext;
+StarRocksParser.DropDataCacheRuleStatementContext = DropDataCacheRuleStatementContext;
+StarRocksParser.ClearDataCacheRulesStatementContext = ClearDataCacheRulesStatementContext;
+StarRocksParser.DataCacheSelectStatementContext = DataCacheSelectStatementContext;
+StarRocksParser.ExportStatementContext = ExportStatementContext;
+StarRocksParser.CancelExportStatementContext = CancelExportStatementContext;
+StarRocksParser.ShowExportStatementContext = ShowExportStatementContext;
+StarRocksParser.InstallPluginStatementContext = InstallPluginStatementContext;
+StarRocksParser.UninstallPluginStatementContext = UninstallPluginStatementContext;
+StarRocksParser.CreateFileStatementContext = CreateFileStatementContext;
+StarRocksParser.DropFileStatementContext = DropFileStatementContext;
+StarRocksParser.ShowSmallFilesStatementContext = ShowSmallFilesStatementContext;
+StarRocksParser.CreatePipeStatementContext = CreatePipeStatementContext;
+StarRocksParser.DropPipeStatementContext = DropPipeStatementContext;
+StarRocksParser.AlterPipeClauseContext = AlterPipeClauseContext;
+StarRocksParser.AlterPipeStatementContext = AlterPipeStatementContext;
+StarRocksParser.DescPipeStatementContext = DescPipeStatementContext;
+StarRocksParser.ShowPipeStatementContext = ShowPipeStatementContext;
+StarRocksParser.SetStatementContext = SetStatementContext;
+StarRocksParser.SetVarContext = SetVarContext;
+StarRocksParser.Transaction_characteristicsContext = Transaction_characteristicsContext;
+StarRocksParser.Transaction_access_modeContext = Transaction_access_modeContext;
+StarRocksParser.Isolation_levelContext = Isolation_levelContext;
+StarRocksParser.Isolation_typesContext = Isolation_typesContext;
+StarRocksParser.SetExprOrDefaultContext = SetExprOrDefaultContext;
+StarRocksParser.SetUserPropertyStatementContext = SetUserPropertyStatementContext;
+StarRocksParser.RoleListContext = RoleListContext;
+StarRocksParser.ExecuteScriptStatementContext = ExecuteScriptStatementContext;
+StarRocksParser.UnsupportedStatementContext = UnsupportedStatementContext;
+StarRocksParser.Lock_itemContext = Lock_itemContext;
+StarRocksParser.Lock_typeContext = Lock_typeContext;
+StarRocksParser.AlterPlanAdvisorAddStatementContext = AlterPlanAdvisorAddStatementContext;
+StarRocksParser.TruncatePlanAdvisorStatementContext = TruncatePlanAdvisorStatementContext;
+StarRocksParser.AlterPlanAdvisorDropStatementContext = AlterPlanAdvisorDropStatementContext;
+StarRocksParser.ShowPlanAdvisorStatementContext = ShowPlanAdvisorStatementContext;
+StarRocksParser.CreateWarehouseStatementContext = CreateWarehouseStatementContext;
+StarRocksParser.DropWarehouseStatementContext = DropWarehouseStatementContext;
+StarRocksParser.SuspendWarehouseStatementContext = SuspendWarehouseStatementContext;
+StarRocksParser.ResumeWarehouseStatementContext = ResumeWarehouseStatementContext;
+StarRocksParser.SetWarehouseStatementContext = SetWarehouseStatementContext;
+StarRocksParser.ShowWarehousesStatementContext = ShowWarehousesStatementContext;
+StarRocksParser.ShowClustersStatementContext = ShowClustersStatementContext;
+StarRocksParser.ShowNodesStatementContext = ShowNodesStatementContext;
+StarRocksParser.AlterWarehouseStatementContext = AlterWarehouseStatementContext;
+StarRocksParser.BeginStatementContext = BeginStatementContext;
+StarRocksParser.CommitStatementContext = CommitStatementContext;
+StarRocksParser.RollbackStatementContext = RollbackStatementContext;
+StarRocksParser.TranslateStatementContext = TranslateStatementContext;
+StarRocksParser.DialectContext = DialectContext;
+StarRocksParser.TranslateSQLContext = TranslateSQLContext;
+StarRocksParser.QueryStatementContext = QueryStatementContext;
+StarRocksParser.QueryRelationContext = QueryRelationContext;
+StarRocksParser.WithClauseContext = WithClauseContext;
+StarRocksParser.QueryNoWithContext = QueryNoWithContext;
+StarRocksParser.QueryPeriodContext = QueryPeriodContext;
+StarRocksParser.PeriodTypeContext = PeriodTypeContext;
+StarRocksParser.QueryPrimaryContext = QueryPrimaryContext;
+StarRocksParser.SubqueryContext = SubqueryContext;
+StarRocksParser.RowConstructorContext = RowConstructorContext;
+StarRocksParser.SortItemContext = SortItemContext;
+StarRocksParser.LimitConstExprContext = LimitConstExprContext;
+StarRocksParser.LimitElementContext = LimitElementContext;
+StarRocksParser.QuerySpecificationContext = QuerySpecificationContext;
+StarRocksParser.FromClauseContext = FromClauseContext;
+StarRocksParser.GroupingElementContext = GroupingElementContext;
+StarRocksParser.GroupingSetContext = GroupingSetContext;
+StarRocksParser.CommonTableExpressionContext = CommonTableExpressionContext;
+StarRocksParser.SetQuantifierContext = SetQuantifierContext;
+StarRocksParser.SelectItemContext = SelectItemContext;
+StarRocksParser.RelationsContext = RelationsContext;
+StarRocksParser.RelationContext = RelationContext;
+StarRocksParser.RelationPrimaryContext = RelationPrimaryContext;
+StarRocksParser.PivotClauseContext = PivotClauseContext;
+StarRocksParser.PivotAggregationExpressionContext = PivotAggregationExpressionContext;
+StarRocksParser.PivotValueContext = PivotValueContext;
+StarRocksParser.SampleClauseContext = SampleClauseContext;
+StarRocksParser.ArgumentListContext = ArgumentListContext;
+StarRocksParser.NamedArgumentListContext = NamedArgumentListContext;
+StarRocksParser.NamedArgumentContext = NamedArgumentContext;
+StarRocksParser.JoinRelationContext = JoinRelationContext;
+StarRocksParser.CrossOrInnerJoinTypeContext = CrossOrInnerJoinTypeContext;
+StarRocksParser.OuterAndSemiJoinTypeContext = OuterAndSemiJoinTypeContext;
+StarRocksParser.BracketHintContext = BracketHintContext;
+StarRocksParser.HintMapContext = HintMapContext;
+StarRocksParser.JoinCriteriaContext = JoinCriteriaContext;
+StarRocksParser.ColumnAliasesContext = ColumnAliasesContext;
+StarRocksParser.PartitionNamesContext = PartitionNamesContext;
+StarRocksParser.KeyPartitionsContext = KeyPartitionsContext;
+StarRocksParser.TabletListContext = TabletListContext;
+StarRocksParser.PrepareStatementContext = PrepareStatementContext;
+StarRocksParser.PrepareSqlContext = PrepareSqlContext;
+StarRocksParser.ExecuteStatementContext = ExecuteStatementContext;
+StarRocksParser.DeallocateStatementContext = DeallocateStatementContext;
+StarRocksParser.ReplicaListContext = ReplicaListContext;
+StarRocksParser.ExpressionsWithDefaultContext = ExpressionsWithDefaultContext;
+StarRocksParser.ExpressionOrDefaultContext = ExpressionOrDefaultContext;
+StarRocksParser.MapExpressionListContext = MapExpressionListContext;
+StarRocksParser.MapExpressionContext = MapExpressionContext;
+StarRocksParser.ExpressionSingletonContext = ExpressionSingletonContext;
+StarRocksParser.ExpressionContext = ExpressionContext;
+StarRocksParser.ExpressionListContext = ExpressionListContext;
+StarRocksParser.BooleanExpressionContext = BooleanExpressionContext;
+StarRocksParser.PredicateContext = PredicateContext;
+StarRocksParser.TupleInSubqueryContext = TupleInSubqueryContext;
+StarRocksParser.PredicateOperationsContext = PredicateOperationsContext;
+StarRocksParser.ValueExpressionContext = ValueExpressionContext;
+StarRocksParser.PrimaryExpressionContext = PrimaryExpressionContext;
+StarRocksParser.LiteralExpressionContext = LiteralExpressionContext;
+StarRocksParser.FunctionCallContext = FunctionCallContext;
+StarRocksParser.AggregationFunctionContext = AggregationFunctionContext;
+StarRocksParser.UserVariableContext = UserVariableContext;
+StarRocksParser.SystemVariableContext = SystemVariableContext;
+StarRocksParser.ColumnReferenceContext = ColumnReferenceContext;
+StarRocksParser.InformationFunctionExpressionContext = InformationFunctionExpressionContext;
+StarRocksParser.SpecialDateTimeExpressionContext = SpecialDateTimeExpressionContext;
+StarRocksParser.SpecialFunctionExpressionContext = SpecialFunctionExpressionContext;
+StarRocksParser.WindowFunctionContext = WindowFunctionContext;
+StarRocksParser.WhenClauseContext = WhenClauseContext;
+StarRocksParser.OverContext = OverContext;
+StarRocksParser.IgnoreNullsContext = IgnoreNullsContext;
+StarRocksParser.WindowFrameContext = WindowFrameContext;
+StarRocksParser.FrameBoundContext = FrameBoundContext;
+StarRocksParser.BackupRestoreObjectDescContext = BackupRestoreObjectDescContext;
+StarRocksParser.TableDescContext = TableDescContext;
+StarRocksParser.BackupRestoreTableDescContext = BackupRestoreTableDescContext;
+StarRocksParser.ExplainDescContext = ExplainDescContext;
+StarRocksParser.OptimizerTraceContext = OptimizerTraceContext;
+StarRocksParser.PartitionExprContext = PartitionExprContext;
+StarRocksParser.PartitionDescContext = PartitionDescContext;
+StarRocksParser.ListPartitionDescContext = ListPartitionDescContext;
+StarRocksParser.SingleItemListPartitionDescContext = SingleItemListPartitionDescContext;
+StarRocksParser.MultiItemListPartitionDescContext = MultiItemListPartitionDescContext;
+StarRocksParser.MultiListPartitionValuesContext = MultiListPartitionValuesContext;
+StarRocksParser.SingleListPartitionValuesContext = SingleListPartitionValuesContext;
+StarRocksParser.ListPartitionValuesContext = ListPartitionValuesContext;
+StarRocksParser.ListPartitionValueContext = ListPartitionValueContext;
+StarRocksParser.StringListContext = StringListContext;
+StarRocksParser.LiteralExpressionListContext = LiteralExpressionListContext;
+StarRocksParser.RangePartitionDescContext = RangePartitionDescContext;
+StarRocksParser.SingleRangePartitionContext = SingleRangePartitionContext;
+StarRocksParser.MultiRangePartitionContext = MultiRangePartitionContext;
+StarRocksParser.PartitionRangeDescContext = PartitionRangeDescContext;
+StarRocksParser.PartitionKeyDescContext = PartitionKeyDescContext;
+StarRocksParser.PartitionValueListContext = PartitionValueListContext;
+StarRocksParser.KeyPartitionContext = KeyPartitionContext;
+StarRocksParser.PartitionValueContext = PartitionValueContext;
+StarRocksParser.DistributionClauseContext = DistributionClauseContext;
+StarRocksParser.DistributionDescContext = DistributionDescContext;
+StarRocksParser.RefreshSchemeDescContext = RefreshSchemeDescContext;
+StarRocksParser.StatusDescContext = StatusDescContext;
+StarRocksParser.PropertiesContext = PropertiesContext;
+StarRocksParser.ExtPropertiesContext = ExtPropertiesContext;
+StarRocksParser.PropertyListContext = PropertyListContext;
+StarRocksParser.UserPropertyListContext = UserPropertyListContext;
+StarRocksParser.PropertyContext = PropertyContext;
+StarRocksParser.InlinePropertiesContext = InlinePropertiesContext;
+StarRocksParser.InlinePropertyContext = InlinePropertyContext;
+StarRocksParser.VarTypeContext = VarTypeContext;
+StarRocksParser.CommentContext = CommentContext;
+StarRocksParser.OutfileContext = OutfileContext;
+StarRocksParser.FileFormatContext = FileFormatContext;
+StarRocksParser.StringContext = StringContext;
+StarRocksParser.BinaryContext = BinaryContext;
+StarRocksParser.ComparisonOperatorContext = ComparisonOperatorContext;
+StarRocksParser.BooleanValueContext = BooleanValueContext;
+StarRocksParser.IntervalContext = IntervalContext;
+StarRocksParser.TaskIntervalContext = TaskIntervalContext;
+StarRocksParser.TaskUnitIdentifierContext = TaskUnitIdentifierContext;
+StarRocksParser.UnitIdentifierContext = UnitIdentifierContext;
+StarRocksParser.UnitBoundaryContext = UnitBoundaryContext;
+StarRocksParser.TypeContext = TypeContext;
+StarRocksParser.ArrayTypeContext = ArrayTypeContext;
+StarRocksParser.MapTypeContext = MapTypeContext;
+StarRocksParser.SubfieldDescContext = SubfieldDescContext;
+StarRocksParser.SubfieldDescsContext = SubfieldDescsContext;
+StarRocksParser.StructTypeContext = StructTypeContext;
+StarRocksParser.TypeParameterContext = TypeParameterContext;
+StarRocksParser.BaseTypeContext = BaseTypeContext;
+StarRocksParser.DecimalTypeContext = DecimalTypeContext;
+StarRocksParser.QualifiedNameContext = QualifiedNameContext;
+StarRocksParser.TableNameContext = TableNameContext;
+StarRocksParser.WriteBranchContext = WriteBranchContext;
+StarRocksParser.IdentifierContext = IdentifierContext;
+StarRocksParser.IdentifierWithAliasContext = IdentifierWithAliasContext;
+StarRocksParser.IdentifierWithAliasListContext = IdentifierWithAliasListContext;
+StarRocksParser.IdentifierListContext = IdentifierListContext;
+StarRocksParser.IdentifierOrStringContext = IdentifierOrStringContext;
+StarRocksParser.IdentifierOrStringListContext = IdentifierOrStringListContext;
+StarRocksParser.IdentifierOrStringOrStarContext = IdentifierOrStringOrStarContext;
+StarRocksParser.UserContext = UserContext;
+StarRocksParser.AssignmentContext = AssignmentContext;
+StarRocksParser.AssignmentListContext = AssignmentListContext;
+StarRocksParser.NumberContext = NumberContext;
+StarRocksParser.NonReservedContext = NonReservedContext;
